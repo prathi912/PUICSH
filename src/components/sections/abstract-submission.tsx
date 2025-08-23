@@ -48,11 +48,11 @@ export function AbstractSubmission() {
   }
 
   return (
-    <section id="abstracts" className="py-16 md:py-24 bg-card">
+    <section id="abstracts" className="py-16 md:py-24">
       <div className="container mx-auto px-4 md:px-6">
         <Card className="max-w-3xl mx-auto shadow-lg">
           <CardHeader>
-            <CardTitle className="text-3xl font-bold text-center font-headline">Submit Your Abstract</CardTitle>
+            <CardTitle className="text-3xl font-bold text-center font-headline">Submit Your Paper</CardTitle>
           </CardHeader>
           <CardContent>
             <Form {...form}>
@@ -90,7 +90,7 @@ export function AbstractSubmission() {
                   name="title"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>Abstract Title</FormLabel>
+                      <FormLabel>Paper Title</FormLabel>
                       <FormControl>
                         <Input placeholder="Your innovative research title" {...field} />
                       </FormControl>
@@ -103,10 +103,10 @@ export function AbstractSubmission() {
                   name="abstract"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>Abstract Body</FormLabel>
+                      <FormLabel>Abstract</FormLabel>
                       <FormControl>
                         <Textarea
-                          placeholder="Provide a summary of your abstract..."
+                          placeholder="Provide a summary of your paper..."
                           className="min-h-[150px]"
                           {...field}
                         />
@@ -119,7 +119,7 @@ export function AbstractSubmission() {
                   )}
                 />
                 <div className="text-center">
-                  <Button type="submit" size="lg" className="w-full md:w-auto">Submit Abstract</Button>
+                  <Button type="submit" size="lg" className="w-full md:w-auto">Submit Paper</Button>
                 </div>
               </form>
             </Form>

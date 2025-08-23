@@ -8,9 +8,10 @@ import { Menu, MonitorSmartphone } from "lucide-react";
 
 const navLinks = [
   { href: "#home", label: "Home" },
+  { href: "#about", label: "About" },
   { href: "#schedule", label: "Schedule" },
   { href: "#speakers", label: "Speakers" },
-  { href: "#abstracts", label: "Submit Abstract" },
+  { href: "#papers", label: "Call for Papers" },
   { href: "#venue", label: "Venue" },
   { href: "#faq", label: "FAQ" },
   { href: "#contact", label: "Contact" },
