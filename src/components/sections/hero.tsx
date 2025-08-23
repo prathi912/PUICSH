@@ -59,10 +59,10 @@ export function Hero() {
       <div className="container mx-auto px-4 md:px-6 text-center relative z-10">
         <div className="max-w-3xl mx-auto">
           <h1 className="text-4xl font-bold tracking-tight text-primary sm:text-5xl md:text-6xl font-headline">
-            HealthCon 2025
+          1st International Conference on Sustainable Health
           </h1>
           <p className="mt-4 text-lg font-medium text-foreground/90 sm:text-xl md:text-2xl">
-            Shaping a Sustainable Future for Global Health
+            Innovation, Advances, & Challenges-2025
           </p>
           <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
             <div className="flex items-center gap-2 text-md font-medium">
@@ -78,8 +78,7 @@ export function Hero() {
           <div className="mt-10 flex justify-center gap-4">
             <Button asChild size="lg" className="bg-primary hover:bg-primary/90"><Link href="#registration">Register Now</Link></Button>
             <Button asChild size="lg" variant="outline" className="border-primary text-primary hover:bg-primary/10 hover:text-primary">
-              <Link href="#abstracts">Submit Paper</Link>
-            </Button>
+              <Link href="#abstracts">Submit Paper</Link></Button>
           </div>
            {timerComponents.length ? (
             <div className="mt-12">

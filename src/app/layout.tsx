@@ -3,8 +3,8 @@ import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
 
 export const metadata: Metadata = {
-  title: 'HealthCon 2025',
-  description: '1st International Conference on Sustainable Health - Innovation, Advances, & Challenges-2025',
+  title: '1st International Conference on Sustainable Health',
+  description: 'Innovation, Advances, & Challenges-2025',
 };
 
 export default function RootLayout({
