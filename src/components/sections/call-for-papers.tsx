@@ -3,16 +3,31 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { ListChecks } from "lucide-react";
+import { ListChecks, BookOpenCheck } from "lucide-react";
 
 const conferenceTracks = [
-    "AI and Machine Learning in Healthcare",
-    "Sustainable Medical Technologies",
-    "Global Health Policy and Equity",
-    "Telemedicine and Digital Health",
-    "Pharmaceutical Innovations and Sustainability",
-    "Climate Change and Public Health",
+    "Innovations in Sustainable Health Technologies",
+    "Advances in Functional Biomaterials",
+    "Sustainable Health Practices and Policies",
+    "Environmental Impact on Health",
+    "Nanotechnology in Sustainable Health",
+    "Early detection diagnostic tools",
+    "AI/ML and IoT in health",
+    "Biodegradable and Eco-friendly Biomaterials",
+    "Renewable Energy Solutions for Health Systems",
+    "Public Health and Sustainability",
+    "Challenges in Global Health Sustainability",
+    "Future Directions in Sustainable Health Research",
 ];
+
+const publicationOpportunities = [
+    "Conference Proceedings (Scopus indexed)",
+    "E3S Web of conference",
+    "AIP Conference Proceedings",
+    "IOP Conference Proceedings",
+    "Articles in special issues in journals (Scopus indexed) and selected Springer Journal",
+    "Books chapters in reputed publications (Scopus indexed)",
+]
 
 export function CallForPapers() {
   return (
@@ -21,8 +36,10 @@ export function CallForPapers() {
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl font-bold font-headline mb-4">Call for Papers</h2>
           <p className="text-muted-foreground mb-8">
-            We invite researchers, practitioners, and policymakers to submit abstracts and full papers on the following themes and tracks. Share your work with a global community of experts.
+            Researchers are invited to submit original papers/ review papers on the following topics/themes. Submissions will be peer-reviewed, and selected accepted papers will be published in the Scopus indexed journals/conference proceedings.
           </p>
+        </div>
+        <div className="grid lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
           <Card className="text-left shadow-lg">
               <CardHeader>
                   <CardTitle className="flex items-center gap-2 p-6 pb-0">
@@ -41,6 +58,29 @@ export function CallForPapers() {
                   </ul>
               </CardContent>
           </Card>
+           <Card className="text-left shadow-lg">
+              <CardHeader>
+                  <CardTitle className="flex items-center gap-2 p-6 pb-0">
+                      <BookOpenCheck className="h-6 w-6 text-primary" />
+                      <span>Publication Opportunities</span>
+                  </CardTitle>
+              </CardHeader>
+              <CardContent>
+                  <ul className="space-y-3 p-6 pt-4">
+                      {publicationOpportunities.map((opportunity) => (
+                          <li key={opportunity} className="flex items-start">
+                               <div className="flex-shrink-0 h-2 w-2 rounded-full bg-primary mt-2.5 mr-3"></div>
+                              <span>{opportunity}</span>
+                          </li>
+                      ))}
+                  </ul>
+              </CardContent>
+          </Card>
+        </div>
+         <div className="text-center mt-12">
+            <Button asChild size="lg" variant="outline" className="border-primary text-primary hover:bg-primary/10 hover:text-primary">
+                <Link href="#submission-guidelines">View Submission Guidelines</Link>
+            </Button>
         </div>
       </div>
     </section>

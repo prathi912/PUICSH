@@ -9,7 +9,7 @@ import { useEffect, useState } from 'react';
 export function Hero() {
 
   const calculateTimeLeft = () => {
-    const difference = +new Date("2025-01-24T09:00:00") - +new Date();
+    const difference = +new Date("2025-12-19T09:00:00") - +new Date();
     let timeLeft = {};
 
     if (difference > 0) {
@@ -37,7 +37,6 @@ export function Hero() {
   const timerComponents: any[] = [];
 
   Object.keys(timeLeft).forEach((interval) => {
-    //
     timerComponents.push(
       <div key={interval} className="flex flex-col items-center p-2 min-w-[60px]">
         <span className="text-3xl md:text-4xl font-bold">{timeLeft[interval as keyof typeof timeLeft] || '0'}</span>
@@ -67,7 +66,7 @@ export function Hero() {
           <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
             <div className="flex items-center gap-2 text-md font-medium">
               <CalendarDays className="h-5 w-5 text-accent" />
-              <span>24th - 25th January 2025</span>
+              <span>19-20th December 2025</span>
             </div>
             <div className="hidden h-6 w-px bg-border sm:block" />
             <div className="flex items-center gap-2 text-md font-medium">
@@ -78,7 +77,7 @@ export function Hero() {
           <div className="mt-10 flex justify-center gap-4">
             <Button asChild size="lg" className="bg-primary hover:bg-primary/90"><Link href="#registration">Register Now</Link></Button>
             <Button asChild size="lg" variant="outline" className="border-primary text-primary hover:bg-primary/10 hover:text-primary">
-              <Link href="#abstracts">Submit Paper</Link></Button>
+              <Link href="#papers">Submit Paper</Link></Button>
           </div>
            {timerComponents.length ? (
             <div className="mt-12">

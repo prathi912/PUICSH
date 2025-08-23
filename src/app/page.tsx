@@ -12,6 +12,9 @@ import { Venue } from '@/components/sections/venue';
 import { Sponsors } from '@/components/sections/sponsors';
 import { Contact } from '@/components/sections/contact';
 import { Faq } from '@/components/sections/faq';
+import { TargetAudience } from '@/components/sections/target-audience';
+import { Sessions } from '@/components/sections/sessions';
+import { SubmissionGuidelines } from '@/components/sections/submission-guidelines';
 
 export default function Home() {
   return (
@@ -22,9 +25,12 @@ export default function Home() {
         <About />
         <ImportantDates />
         <CallForPapers />
+        <SubmissionGuidelines />
         <Speakers />
         <Committee />
         <Program />
+        <TargetAudience />
+        <Sessions />
         <Registration />
         <Venue />
         <Sponsors />

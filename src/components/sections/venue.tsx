@@ -10,7 +10,6 @@ export function Venue() {
   const [apiKeyExists, setApiKeyExists] = useState(false);
 
   useEffect(() => {
-    // This check runs only on the client-side
     if (process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY) {
       setApiKeyExists(true);
     }

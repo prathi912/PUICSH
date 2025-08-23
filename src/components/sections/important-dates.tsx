@@ -2,11 +2,10 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { CalendarCheck } from "lucide-react";
 
 const dates = [
-  { date: "October 30, 2024", event: "Abstract Submission Deadline" },
-  { date: "November 30, 2024", event: "Full Paper Submission Deadline" },
-  { date: "December 15, 2024", event: "Early Bird Registration Ends" },
-  { date: "January 15, 2025", event: "Registration Deadline" },
-  { date: "January 24-25, 2025", event: "Conference Dates" },
+  { date: "1st November 2025", event: "Abstract Submission Deadline" },
+  { date: "15th November 2025", event: "Notification of Acceptance" },
+  { date: "15th January 2026", event: "Full Paper Submission Deadline" },
+  { date: "19-20 December 2025", event: "Conference Dates" },
 ];
 
 export function ImportantDates() {

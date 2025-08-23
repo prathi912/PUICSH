@@ -10,10 +10,10 @@ import Image from "next/image";
 const navLinks = [
   { href: "#home", label: "Home" },
   { href: "#about", label: "About" },
-  { href: "#dates", label: "Dates" },
   { href: "#papers", label: "Call for Papers" },
-  { href: "#speakers", label: "Speakers" },
+  { href: "#dates", label: "Dates" },
   { href: "#committee", label: "Committee" },
+  { href: "#speakers", label: "Speakers" },
   { href: "#program", label: "Program" },
   { href: "#registration", label: "Registration" },
   { href: "#venue", label: "Venue" },
