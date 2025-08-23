@@ -4,7 +4,8 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import { Menu, MonitorSmartphone } from "lucide-react";
+import { Menu } from "lucide-react";
+import Image from "next/image";
 
 const navLinks = [
   { href: "#home", label: "Home" },
@@ -49,10 +50,9 @@ export function Header() {
         isScrolled ? "border-b bg-card/80 backdrop-blur-sm" : "bg-transparent"
       }`}
     >
-      <div className="container mx-auto flex h-16 items-center justify-between px-4 md:px-6">
+      <div className="container mx-auto flex h-20 items-center justify-between px-4 md:px-6">
         <Link href="#home" className="flex items-center gap-2">
-          <MonitorSmartphone className="h-6 w-6 text-primary" />
-          <span className="font-bold text-lg">HealthCon 2025</span>
+          <Image src="/logo.png" alt="Parul University Logo" width={250} height={50} className="dark:invert" />
         </Link>
         <nav className="hidden items-center gap-6 md:flex">
           {navLinks.map((link) => (
@@ -71,8 +71,7 @@ export function Header() {
             <SheetContent side="left">
               <div className="flex flex-col gap-6 p-6">
                 <Link href="#home" className="flex items-center gap-2" onClick={() => setMobileMenuOpen(false)}>
-                  <MonitorSmartphone className="h-6 w-6 text-primary" />
-                  <span className="font-bold">HealthCon 2025</span>
+                   <Image src="/logo.png" alt="Parul University Logo" width={200} height={40} className="dark:invert"/>
                 </Link>
                 <nav className="flex flex-col gap-4">
                   {navLinks.map((link) => (

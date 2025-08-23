@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
-import { MonitorSmartphone, Twitter, Linkedin, Facebook } from "lucide-react";
+import { Twitter, Linkedin, Facebook } from "lucide-react";
+import Image from "next/image";
 
 export function Footer() {
   return (
@@ -9,11 +10,10 @@ export function Footer() {
         <div className="grid gap-8 md:grid-cols-3">
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <MonitorSmartphone className="h-6 w-6 text-primary" />
-              <span className="text-xl font-semibold">HealthCon 2025</span>
+               <Image src="/logo.png" alt="Parul University Logo" width={200} height={40} className="dark:invert" />
             </div>
             <p className="text-sm text-muted-foreground">
-              Organized by the Parul Institute of Health Sciences.
+              Organized by the Parul University Research and Development Cell.
             </p>
           </div>
           <div className="md:text-center">
