@@ -2,12 +2,17 @@ import { Header } from '@/components/layout/header';
 import { Footer } from '@/components/layout/footer';
 import { Hero } from '@/components/sections/hero';
 import { About } from '@/components/sections/about';
-import { Schedule } from '@/components/sections/schedule';
-import { Speakers } from '@/components/sections/speakers';
+import { ImportantDates } from '@/components/sections/important-dates';
 import { CallForPapers } from '@/components/sections/call-for-papers';
-import { MapSection } from '@/components/sections/map-section';
-import { Faq } from '@/components/sections/faq';
+import { Speakers } from '@/components/sections/speakers';
+import { Committee } from '@/components/sections/committee';
+import { Program } from '@/components/sections/program';
+import { Registration } from '@/components/sections/registration';
+import { Venue } from '@/components/sections/venue';
+import { Sponsors } from '@/components/sections/sponsors';
 import { Contact } from '@/components/sections/contact';
+import { Faq } from '@/components/sections/faq';
+import { AbstractSubmission } from '@/components/sections/abstract-submission';
 
 export default function Home() {
   return (
@@ -16,10 +21,15 @@ export default function Home() {
       <main className="flex-1">
         <Hero />
         <About />
-        <Schedule />
-        <Speakers />
+        <ImportantDates />
         <CallForPapers />
-        <MapSection />
+        <AbstractSubmission />
+        <Speakers />
+        <Committee />
+        <Program />
+        <Registration />
+        <Venue />
+        <Sponsors />
         <Faq />
         <Contact />
       </main>

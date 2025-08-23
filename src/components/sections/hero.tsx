@@ -1,14 +1,57 @@
+"use client";
+
 import { Button } from "@/components/ui/button";
 import { CalendarDays, MapPin } from "lucide-react";
 import Image from 'next/image';
+import Link from 'next/link';
+import { useEffect, useState } from 'react';
 
 export function Hero() {
+
+  const calculateTimeLeft = () => {
+    const difference = +new Date("2025-01-24T09:00:00") - +new Date();
+    let timeLeft = {};
+
+    if (difference > 0) {
+      timeLeft = {
+        days: Math.floor(difference / (1000 * 60 * 60 * 24)),
+        hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
+        minutes: Math.floor((difference / 1000 / 60) % 60),
+        seconds: Math.floor((difference / 1000) % 60),
+      };
+    }
+
+    return timeLeft as {days: number, hours: number, minutes: number, seconds: number};
+  };
+
+  const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setTimeLeft(calculateTimeLeft());
+    }, 1000);
+
+    return () => clearTimeout(timer);
+  });
+
+  const timerComponents: any[] = [];
+
+  Object.keys(timeLeft).forEach((interval) => {
+    //
+    timerComponents.push(
+      <div key={interval} className="flex flex-col items-center p-2 min-w-[60px]">
+        <span className="text-3xl md:text-4xl font-bold">{timeLeft[interval as keyof typeof timeLeft] || '0'}</span>
+        <span className="text-xs uppercase">{interval}</span>
+      </div>
+    );
+  });
+
   return (
     <section id="home" className="relative w-full py-20 md:py-32 lg:py-40">
        <Image 
         src="https://placehold.co/1920x1080.png" 
         alt="Conference background" 
-        layout="fill"
+        fill
         objectFit="cover"
         className="opacity-10"
         data-ai-hint="healthcare sustainability"
@@ -33,11 +76,20 @@ export function Hero() {
             </div>
           </div>
           <div className="mt-10 flex justify-center gap-4">
-            <Button size="lg" className="bg-primary hover:bg-primary/90">Register Now</Button>
-            <Button size="lg" variant="outline" className="border-primary text-primary hover:bg-primary/10 hover:text-primary">
-              Submit Paper
+            <Button asChild size="lg" className="bg-primary hover:bg-primary/90"><Link href="#registration">Register Now</Link></Button>
+            <Button asChild size="lg" variant="outline" className="border-primary text-primary hover:bg-primary/10 hover:text-primary">
+              <Link href="#abstracts">Submit Paper</Link>
             </Button>
           </div>
+           {timerComponents.length ? (
+            <div className="mt-12">
+              <div className="inline-flex items-center justify-center gap-4 md:gap-8 rounded-lg bg-card/80 p-4 md:p-6 backdrop-blur-sm">
+                {timerComponents}
+              </div>
+            </div>
+          ) : (
+            <div className="mt-12 text-2xl font-bold">Conference is live!</div>
+          )}
         </div>
       </div>
     </section>

@@ -1,6 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Mail, Phone } from "lucide-react";
+import { Mail, Phone, Twitter, Linkedin, Facebook } from "lucide-react";
+import Link from "next/link";
 
 export function Contact() {
   return (
@@ -10,8 +11,8 @@ export function Contact() {
         <p className="max-w-2xl mx-auto text-muted-foreground mb-8">
           Have questions or need more information? Feel free to reach out to us.
         </p>
-        <div className="flex flex-col md:flex-row justify-center items-center gap-8">
-          <Card className="w-full md:w-auto flex-1 max-w-sm">
+        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          <Card className="shadow-lg">
             <CardContent className="p-6 text-center">
                 <div className="mx-auto bg-primary/10 rounded-full h-12 w-12 flex items-center justify-center">
                     <Mail className="h-6 w-6 text-primary" />
@@ -23,7 +24,7 @@ export function Contact() {
                 </Button>
             </CardContent>
           </Card>
-          <Card className="w-full md:w-auto flex-1 max-w-sm">
+          <Card className="shadow-lg">
             <CardContent className="p-6 text-center">
                  <div className="mx-auto bg-primary/10 rounded-full h-12 w-12 flex items-center justify-center">
                     <Phone className="h-6 w-6 text-primary" />
@@ -35,6 +36,20 @@ export function Contact() {
                 </Button>
             </CardContent>
           </Card>
+        </div>
+        <div className="mt-12">
+            <h4 className="font-semibold mb-4 text-lg">Follow Our Socials</h4>
+            <div className="flex justify-center gap-6">
+              <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
+                <Twitter className="h-6 w-6" />
+              </Link>
+              <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
+                <Linkedin className="h-6 w-6" />
+              </Link>
+              <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
+                <Facebook className="h-6 w-6" />
+              </Link>
+            </div>
         </div>
       </div>
     </section>

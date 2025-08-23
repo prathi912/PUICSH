@@ -25,13 +25,13 @@ export function CallForPapers() {
           </p>
           <Card className="text-left shadow-lg">
               <CardHeader>
-                  <CardTitle className="flex items-center gap-2">
+                  <CardTitle className="flex items-center gap-2 p-6 pb-0">
                       <ListChecks className="h-6 w-6 text-primary" />
                       <span>Conference Themes / Tracks</span>
                   </CardTitle>
               </CardHeader>
               <CardContent>
-                  <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4">
+                  <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4 p-6 pt-4">
                       {conferenceTracks.map((track) => (
                           <li key={track} className="flex items-start">
                                <div className="flex-shrink-0 h-2 w-2 rounded-full bg-primary mt-2.5 mr-3"></div>

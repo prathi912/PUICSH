@@ -9,10 +9,14 @@ import { Menu, MonitorSmartphone } from "lucide-react";
 const navLinks = [
   { href: "#home", label: "Home" },
   { href: "#about", label: "About" },
-  { href: "#schedule", label: "Schedule" },
-  { href: "#speakers", label: "Speakers" },
+  { href: "#dates", label: "Dates" },
   { href: "#papers", label: "Call for Papers" },
+  { href: "#speakers", label: "Speakers" },
+  { href: "#committee", label: "Committee" },
+  { href: "#program", label: "Program" },
+  { href: "#registration", label: "Registration" },
   { href: "#venue", label: "Venue" },
+  { href: "#sponsors", label: "Sponsors" },
   { href: "#faq", label: "FAQ" },
   { href: "#contact", label: "Contact" },
 ];
@@ -56,7 +60,7 @@ export function Header() {
           ))}
         </nav>
         <div className="flex items-center gap-2">
-           <Button className="hidden md:inline-flex bg-accent hover:bg-accent/90">Register Now</Button>
+           <Button asChild className="hidden md:inline-flex bg-accent hover:bg-accent/90"><Link href="#registration">Register Now</Link></Button>
           <Sheet open={mobileMenuOpen} onOpenChange={setMobileMenuOpen}>
             <SheetTrigger asChild>
               <Button variant="outline" size="icon" className="md:hidden">
@@ -75,7 +79,7 @@ export function Header() {
                     <NavLink key={link.href} {...link} />
                   ))}
                 </nav>
-                <Button className="w-full bg-accent hover:bg-accent/90">Register Now</Button>
+                <Button asChild className="w-full bg-accent hover:bg-accent/90"><Link href="#registration">Register Now</Link></Button>
               </div>
             </SheetContent>
           </Sheet>
