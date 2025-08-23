@@ -41,10 +41,6 @@ export function CallForPapers() {
                   </ul>
               </CardContent>
           </Card>
-
-          <Button asChild size="lg" className="mt-8 bg-accent hover:bg-accent/90">
-            <Link href="#abstracts">Submit Your Paper</Link>
-          </Button>
         </div>
       </div>
     </section>

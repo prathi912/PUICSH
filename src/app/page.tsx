@@ -12,7 +12,6 @@ import { Venue } from '@/components/sections/venue';
 import { Sponsors } from '@/components/sections/sponsors';
 import { Contact } from '@/components/sections/contact';
 import { Faq } from '@/components/sections/faq';
-import { AbstractSubmission } from '@/components/sections/abstract-submission';
 
 export default function Home() {
   return (
@@ -23,7 +22,6 @@ export default function Home() {
         <About />
         <ImportantDates />
         <CallForPapers />
-        <AbstractSubmission />
         <Speakers />
         <Committee />
         <Program />
