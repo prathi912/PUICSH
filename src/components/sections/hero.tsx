@@ -74,14 +74,14 @@ export function Hero() {
               <span>Parul University, Vadodara, Gujarat</span>
             </div>
           </div>
-          <div className="mt-10 flex justify-center gap-4">
+          <div className="mt-10 flex flex-col sm:flex-row justify-center gap-4">
             <Button asChild size="lg" className="bg-primary hover:bg-primary/90"><Link href="#registration">Register Now</Link></Button>
             <Button asChild size="lg" variant="outline" className="border-primary text-primary hover:bg-primary/10 hover:text-primary">
               <Link href="#papers">Submit Paper</Link></Button>
           </div>
            {timerComponents.length ? (
             <div className="mt-12">
-              <div className="inline-flex items-center justify-center gap-4 md:gap-8 rounded-lg bg-card/80 p-4 md:p-6 backdrop-blur-sm">
+              <div className="inline-flex items-center justify-center flex-wrap gap-2 md:gap-8 rounded-lg bg-card/80 p-4 md:p-6 backdrop-blur-sm">
                 {timerComponents}
               </div>
             </div>

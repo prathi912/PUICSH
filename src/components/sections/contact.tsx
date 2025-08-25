@@ -11,7 +11,7 @@ export function Contact() {
         <p className="max-w-2xl mx-auto text-muted-foreground mb-8">
           Have questions or need more information? Feel free to reach out to us.
         </p>
-        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <div className="grid sm:grid-cols-2 gap-8 max-w-4xl mx-auto">
           <Card className="shadow-lg">
             <CardContent className="p-6 text-center">
                 <div className="mx-auto bg-primary/10 rounded-full h-12 w-12 flex items-center justify-center">

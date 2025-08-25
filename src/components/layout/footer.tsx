@@ -40,7 +40,7 @@ export function Footer() {
             </div>
           </div>
         </div>
-        <div className="border-t mt-8 pt-6 flex flex-col items-center justify-between gap-4 sm:flex-row">
+        <div className="border-t mt-8 pt-6 flex flex-col items-center justify-between gap-4 sm:flex-row text-center sm:text-left">
           <p className="text-sm text-muted-foreground">
             © {new Date().getFullYear()} HealthCon 2025. All rights reserved.
           </p>

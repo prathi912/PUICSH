@@ -47,7 +47,7 @@ export function Venue() {
               </CardContent>
             </Card>
           </div>
-          <div className="md:col-span-2 h-96 md:h-[500px] rounded-lg overflow-hidden shadow-lg">
+          <div className="md:col-span-2 h-80 md:h-[500px] rounded-lg overflow-hidden shadow-lg">
             {apiKeyExists ? (
               <MapComponent />
             ) : (

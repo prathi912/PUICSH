@@ -17,7 +17,7 @@ export function Sponsors() {
         <p className="max-w-2xl mx-auto text-center text-muted-foreground mb-12">
           We are grateful for the generous support of our sponsors who make this conference possible.
         </p>
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 items-center">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-8 items-center">
           {sponsors.map((sponsor) => (
             <div key={sponsor.name} className="flex justify-center">
               <Image
