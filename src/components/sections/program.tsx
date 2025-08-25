@@ -25,7 +25,7 @@ const day2Schedule = [
 export function Program() {
   
   const ScheduleItem = ({ event }: { event: any }) => (
-    <div className="flex items-start gap-4 py-4">
+    <div className="flex items-start gap-4 py-4 transition-all duration-300 hover:bg-muted/50 -mx-6 px-6">
         <div className="w-24 text-right pr-4 text-primary font-semibold flex-shrink-0">
             <Clock className="inline-block h-4 w-4 mr-1" />
             {event.time}
@@ -47,7 +47,7 @@ export function Program() {
             Here’s a glimpse of what to expect. The full, detailed schedule will be available for download soon.
             </p>
         </div>
-        <Card className="max-w-4xl mx-auto shadow-lg">
+        <Card className="max-w-4xl mx-auto shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-xl">
             <CardContent className="p-6">
                  <Tabs defaultValue="day1" className="w-full">
                     <TabsList className="grid w-full grid-cols-2">
@@ -64,7 +64,7 @@ export function Program() {
             </CardContent>
         </Card>
         <div className="text-center mt-8">
-            <Button variant="outline">
+            <Button variant="outline" className="transition-transform duration-300 hover:scale-110">
                 <Download className="mr-2 h-4 w-4" />
                 Download Full Schedule (PDF)
             </Button>

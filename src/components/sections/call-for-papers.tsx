@@ -40,7 +40,7 @@ export function CallForPapers() {
           </p>
         </div>
         <div className="grid lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
-          <Card className="text-left shadow-lg">
+          <Card className="text-left shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-xl">
               <CardHeader>
                   <CardTitle className="flex items-center gap-2 p-6 pb-0">
                       <ListChecks className="h-6 w-6 text-primary" />
@@ -58,7 +58,7 @@ export function CallForPapers() {
                   </ul>
               </CardContent>
           </Card>
-           <Card className="text-left shadow-lg">
+           <Card className="text-left shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-xl">
               <CardHeader>
                   <CardTitle className="flex items-center gap-2 p-6 pb-0">
                       <BookOpenCheck className="h-6 w-6 text-primary" />
@@ -78,7 +78,7 @@ export function CallForPapers() {
           </Card>
         </div>
          <div className="text-center mt-12">
-            <Button asChild size="lg" variant="outline" className="border-primary text-primary hover:bg-primary/10 hover:text-primary">
+            <Button asChild size="lg" variant="outline" className="border-primary text-primary hover:bg-primary/10 hover:text-primary transition-transform duration-300 hover:scale-110">
                 <Link href="#submission-guidelines">View Submission Guidelines</Link>
             </Button>
         </div>

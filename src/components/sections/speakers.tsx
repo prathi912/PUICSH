@@ -31,7 +31,7 @@ const internationalSpeakers = [
 
 export function Speakers() {
   const SpeakerCard = ({ speaker }: { speaker: { name: string, affiliation: string, email?: string } }) => (
-    <Card className="text-center">
+    <Card className="text-center transition-transform duration-300 hover:scale-105 hover:shadow-xl">
       <CardHeader>
         <CardTitle className="text-xl text-primary">{speaker.name}</CardTitle>
         <CardDescription className="text-accent font-medium mt-1">{speaker.affiliation}</CardDescription>

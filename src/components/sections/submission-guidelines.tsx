@@ -42,7 +42,7 @@ export function SubmissionGuidelines() {
         <h2 className="text-3xl font-bold text-center mb-12 font-headline">Submission Guidelines</h2>
         <div className="grid md:grid-cols-2 gap-8">
           
-          <Card>
+          <Card className="transition-transform duration-300 hover:scale-105 hover:shadow-xl">
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
                 <FileText className="h-6 w-6 text-primary" />
@@ -65,7 +65,7 @@ export function SubmissionGuidelines() {
             </CardContent>
           </Card>
 
-          <Card>
+          <Card className="transition-transform duration-300 hover:scale-105 hover:shadow-xl">
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
                 <Presentation className="h-6 w-6 text-primary" />

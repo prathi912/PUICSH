@@ -12,7 +12,7 @@ export function Contact() {
           Have questions or need more information? Feel free to reach out to us.
         </p>
         <div className="grid sm:grid-cols-2 gap-8 max-w-4xl mx-auto">
-          <Card className="shadow-lg">
+          <Card className="shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-xl">
             <CardContent className="p-6 text-center">
                 <div className="mx-auto bg-primary/10 rounded-full h-12 w-12 flex items-center justify-center">
                     <Mail className="h-6 w-6 text-primary" />
@@ -24,7 +24,7 @@ export function Contact() {
                 </Button>
             </CardContent>
           </Card>
-          <Card className="shadow-lg">
+          <Card className="shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-xl">
             <CardContent className="p-6 text-center">
                  <div className="mx-auto bg-primary/10 rounded-full h-12 w-12 flex items-center justify-center">
                     <Phone className="h-6 w-6 text-primary" />
@@ -40,13 +40,13 @@ export function Contact() {
         <div className="mt-12">
             <h4 className="font-semibold mb-4 text-lg">Follow Our Socials</h4>
             <div className="flex justify-center gap-6">
-              <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
+              <Link href="#" className="text-muted-foreground hover:text-primary transition-colors duration-300 transform hover:scale-125">
                 <Twitter className="h-6 w-6" />
               </Link>
-              <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
+              <Link href="#" className="text-muted-foreground hover:text-primary transition-colors duration-300 transform hover:scale-125">
                 <Linkedin className="h-6 w-6" />
               </Link>
-              <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
+              <Link href="#" className="text-muted-foreground hover:text-primary transition-colors duration-300 transform hover:scale-125">
                 <Facebook className="h-6 w-6" />
               </Link>
             </div>

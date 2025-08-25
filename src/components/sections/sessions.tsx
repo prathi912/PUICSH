@@ -46,9 +46,9 @@ export function Sessions() {
         <h2 className="text-3xl font-bold text-center mb-12 font-headline">Conference Sessions</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {sessionTypes.map(session => (
-                <Card key={session.title} className="text-center shadow-lg">
+                <Card key={session.title} className="text-center shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-xl">
                     <CardHeader>
-                        <div className="mx-auto bg-primary/10 rounded-full h-16 w-16 flex items-center justify-center mb-4">
+                        <div className="mx-auto bg-primary/10 rounded-full h-16 w-16 flex items-center justify-center mb-4 transition-transform duration-300 group-hover:scale-110">
                             {session.icon}
                         </div>
                         <CardTitle>{session.title}</CardTitle>

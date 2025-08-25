@@ -50,7 +50,7 @@ export function Registration() {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch">
           {registrationTiers.map((tier) => (
-            <Card key={tier.name} className={`flex flex-col shadow-lg ${tier.primary ? 'border-primary border-2 relative' : ''}`}>
+            <Card key={tier.name} className={`flex flex-col shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-xl ${tier.primary ? 'border-primary border-2 relative' : ''}`}>
               {tier.primary && <div className="absolute top-0 -translate-y-1/2 left-1/2 -translate-x-1/2 px-3 py-1 text-sm font-semibold text-primary-foreground bg-primary rounded-full">Most Popular</div>}
               <CardHeader className="text-center p-6">
                 <CardTitle className="text-2xl text-primary">{tier.name}</CardTitle>
@@ -65,7 +65,7 @@ export function Registration() {
                     </li>
                   ))}
                 </ul>
-                <Button asChild className="w-full mt-auto bg-primary hover:bg-primary/90">
+                <Button asChild className="w-full mt-auto bg-primary hover:bg-primary/90 transition-transform duration-300 hover:scale-110">
                     <Link href="#">Register Now</Link>
                 </Button>
               </CardContent>

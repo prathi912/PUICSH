@@ -16,7 +16,7 @@ export function ImportantDates() {
             <h2 className="text-3xl font-bold font-headline mb-4">Important Dates</h2>
             <p className="text-muted-foreground mb-8">Mark your calendars! Don't miss these crucial deadlines.</p>
         </div>
-        <Card className="max-w-3xl mx-auto shadow-lg">
+        <Card className="max-w-3xl mx-auto shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-xl">
           <CardContent className="p-6">
             <div className="relative">
               <div className="absolute left-3.5 top-0 bottom-0 w-px bg-border hidden sm:block"></div>

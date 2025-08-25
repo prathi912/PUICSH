@@ -75,8 +75,8 @@ export function Hero() {
             </div>
           </div>
           <div className="mt-10 flex flex-col sm:flex-row justify-center gap-4">
-            <Button asChild size="lg" className="bg-primary hover:bg-primary/90"><Link href="#registration">Register Now</Link></Button>
-            <Button asChild size="lg" variant="outline" className="border-primary text-primary hover:bg-primary/10 hover:text-primary">
+            <Button asChild size="lg" className="bg-primary hover:bg-primary/90 transition-transform duration-300 hover:scale-110"><Link href="#registration">Register Now</Link></Button>
+            <Button asChild size="lg" variant="outline" className="border-primary text-primary hover:bg-primary/10 hover:text-primary transition-transform duration-300 hover:scale-110">
               <Link href="#papers">Submit Paper</Link></Button>
           </div>
            {timerComponents.length ? (
