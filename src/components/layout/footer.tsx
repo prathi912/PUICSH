@@ -10,7 +10,7 @@ export function Footer() {
         <div className="grid gap-8 md:grid-cols-3">
           <div>
             <div className="flex items-center gap-2 mb-4">
-               <Image src="/logo.png" alt="Parul University Logo" width={200} height={40} className="dark:invert" />
+               <Image src="https://paruluniversity.ac.in/pu-web/images/logo.png" alt="Parul University Logo" width={200} height={40} className="dark:invert" />
             </div>
             <p className="text-sm text-muted-foreground">
               Organized by the Parul University Research and Development Cell.

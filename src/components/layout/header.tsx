@@ -52,7 +52,7 @@ export function Header() {
     >
       <div className="container mx-auto flex h-20 items-center justify-between px-4 md:px-6">
         <Link href="#home" className="flex items-center gap-2">
-          <Image src="/logo.png" alt="Parul University Logo" width={250} height={50} className="dark:invert" />
+          <Image src="https://paruluniversity.ac.in/pu-web/images/logo.png" alt="Parul University Logo" width={250} height={50} className="dark:invert" />
         </Link>
         <nav className="hidden items-center gap-6 md:flex">
           {navLinks.map((link) => (
@@ -71,7 +71,7 @@ export function Header() {
             <SheetContent side="left">
               <div className="flex flex-col gap-6 p-6">
                 <Link href="#home" className="flex items-center gap-2" onClick={() => setMobileMenuOpen(false)}>
-                   <Image src="/logo.png" alt="Parul University Logo" width={200} height={40} className="dark:invert"/>
+                   <Image src="https://paruluniversity.ac.in/pu-web/images/logo.png" alt="Parul University Logo" width={200} height={40} className="dark:invert"/>
                 </Link>
                 <nav className="flex flex-col gap-4">
                   {navLinks.map((link) => (
