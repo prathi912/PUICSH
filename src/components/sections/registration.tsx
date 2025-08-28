@@ -40,7 +40,7 @@ const registrationTiers = [
 
 export function Registration() {
   return (
-    <section id="registration" className="py-16 md:py-24 bg-card">
+    <section id="registration" className="py-16 md:py-24 bg-card transition-all duration-500 ease-out data-[state=open]:animate-in data-[state=open]:fade-in-0 data-[state=open]:zoom-in-95">
       <div className="container mx-auto px-4 md:px-6">
         <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl font-bold font-headline mb-4">Registration</h2>

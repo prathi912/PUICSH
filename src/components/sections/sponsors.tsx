@@ -11,7 +11,7 @@ const sponsors = [
 
 export function Sponsors() {
   return (
-    <section id="sponsors" className="py-16 md:py-24 bg-card">
+    <section id="sponsors" className="py-16 md:py-24 bg-card transition-all duration-500 ease-out data-[state=open]:animate-in data-[state=open]:fade-in-0 data-[state=open]:zoom-in-95">
       <div className="container mx-auto px-4 md:px-6">
         <h2 className="text-3xl font-bold text-center mb-4 font-headline">Our Sponsors</h2>
         <p className="max-w-2xl mx-auto text-center text-muted-foreground mb-12">

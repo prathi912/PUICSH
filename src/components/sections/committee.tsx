@@ -51,7 +51,7 @@ const committees = {
 
 export function Committee() {
   return (
-    <section id="committee" className="py-16 md:py-24 bg-card">
+    <section id="committee" className="py-16 md:py-24 bg-card transition-all duration-500 ease-out data-[state=open]:animate-in data-[state=open]:fade-in-0 data-[state=open]:zoom-in-95">
       <div className="container mx-auto px-4 md:px-6">
         <h2 className="text-3xl font-bold text-center mb-12 font-headline">Conference Committee</h2>
         

@@ -14,7 +14,7 @@ const audienceList = [
 
 export function TargetAudience() {
   return (
-    <section id="target-audience" className="py-16 md:py-24 bg-card">
+    <section id="target-audience" className="py-16 md:py-24 bg-card transition-all duration-500 ease-out data-[state=open]:animate-in data-[state=open]:fade-in-0 data-[state=open]:zoom-in-95">
       <div className="container mx-auto px-4 md:px-6">
         <Card className="max-w-4xl mx-auto shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-xl">
           <CardHeader>
