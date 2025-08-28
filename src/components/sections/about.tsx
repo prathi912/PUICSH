@@ -27,12 +27,9 @@ export function About() {
             </div>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
-            <div className="flex justify-center md:order-last">
-                 <Image src="https://picsum.photos/600/400" alt="Parul University Campus" width={600} height={400} className="rounded-lg shadow-lg" data-ai-hint="university campus" />
-            </div>
+          <div className="mb-16">
              <div className="text-left">
-                 <h3 className="text-2xl font-bold font-headline mb-4">About Parul University</h3>
+                 <h3 className="text-2xl font-bold font-headline mb-4 text-center">About Parul University</h3>
                  <p className="text-muted-foreground text-justify">
                   A multidisciplinary destination of learning and innovation, propelling quality in higher education with a record of being India’s youngest private university to receive NAAC A++ accreditation in the first cycle. Situated in Vadodara, Gujarat, Parul University, is an embodiment of the nation’s essence of cultural heritage blended with modern innovations and academic practices for student enrichment, while fostering national and global development. The University is an amalgamation of faculties and institutes that offer a plethora of diploma, undergraduate, postgraduate and doctoral programs in numerous disciplines. Through its uniquely structured, industry linked and field aligned programs, the University holds a noteworthy record of fulfilling the infinite dreams of students, by launching their lucrative careers towards high trajectories through start–up incubation and impeccable placement records. The 125–acre eco- friendly campus is home to over 43,000 students from every State of India and over 2,500 international students from 68 countries, making Parul University a truly culturally global destination.
                  </p>
