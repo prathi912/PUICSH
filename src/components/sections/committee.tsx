@@ -51,11 +51,11 @@ const committees = {
 
 export function Committee() {
   return (
-    <section id="committee" className="py-16 md:py-24 bg-card transition-all duration-500 ease-out data-[state=open]:animate-in data-[state=open]:fade-in-0 data-[state=open]:zoom-in-95">
+    <section id="committee" className="py-16 md:py-24 bg-card">
       <div className="container mx-auto px-4 md:px-6">
         <h2 className="text-3xl font-bold text-center mb-12 font-headline">Conference Committee</h2>
         
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
           {Object.entries(committees).map(([title, members]) => (
             <Card key={title} className="flex flex-col transition-transform duration-300 hover:scale-105 hover:shadow-xl">
               <CardHeader>
@@ -66,7 +66,7 @@ export function Committee() {
                   {members.map((member, index) => (
                     <li key={index}>
                       <h4 className="font-semibold">{member.name}</h4>
-                      {member.affiliation && <p className="text-sm text-muted-foreground">{member.affiliation}</p>}
+                      {'affiliation' in member && member.affiliation && <p className="text-sm text-muted-foreground">{member.affiliation}</p>}
                     </li>
                   ))}
                 </ul>
