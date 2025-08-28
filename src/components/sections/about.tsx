@@ -29,7 +29,7 @@ export function About() {
 
           <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
             <div className="flex justify-center md:order-last">
-                 <Image src="https://paruluniversity.ac.in/Uploade_image/original/slider-1.jpg" alt="Parul University Campus" width={600} height={400} className="rounded-lg shadow-lg" data-ai-hint="university campus" />
+                 <Image src="https://picsum.photos/600/400" alt="Parul University Campus" width={600} height={400} className="rounded-lg shadow-lg" data-ai-hint="university campus" />
             </div>
              <div className="text-left">
                  <h3 className="text-2xl font-bold font-headline mb-4">About Parul University</h3>
