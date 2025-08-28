@@ -23,7 +23,7 @@ export function About() {
               </p>
             </div>
             <div className="flex justify-center">
-                <Image src="https://picsum.photos/600/400" alt="Conference" width={600} height={400} className="rounded-lg shadow-lg" data-ai-hint="conference event" />
+                <Image src="https://firebasestorage.googleapis.com/v0/b/studioc-32247.appspot.com/o/e54e44f8-1edc-497d-aa21-72f10b754807.png?alt=media&token=866b17da-ac18-472e-8394-ba5f8f53a79f" alt="Conference" width={600} height={400} className="rounded-lg shadow-lg" data-ai-hint="conference event" />
             </div>
           </div>
 
