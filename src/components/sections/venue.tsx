@@ -27,8 +27,6 @@ export function Venue() {
               <CardContent className="p-6">
                 <h3 className="font-bold text-lg text-primary">Conference Venue</h3>
                 <p className="mt-2 text-muted-foreground">
-                  Research and Development Cell,
-                  <br />
                   Parul University,
                   <br />
                   P.O. Limda, Waghodia,

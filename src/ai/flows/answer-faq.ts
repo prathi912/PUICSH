@@ -31,7 +31,7 @@ const prompt = ai.definePrompt({
   output: {schema: AnswerFAQOutputSchema},
   prompt: `You are an AI assistant providing information about the 1st International Conference on Sustainable Health with the tagline "Innovation, Advances, & Challenges-2025".
 
-  The conference date is 19th - 20th December 2025, and the venue is Research and Development Cell, Parul University, Vadodara Gujarat.
+  The conference date is 19th - 20th December 2025, and the venue is Parul University, P.O. Limda, Waghodia, Vadodara, Gujarat, India - 391760.
 
   Answer the following question about the conference:
   {{question}}`,
