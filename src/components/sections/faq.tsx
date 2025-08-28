@@ -60,7 +60,7 @@ export function Faq() {
             <CardDescription>Have a question? Ask our AI assistant!</CardDescription>
           </CardHeader>
           <CardContent>
-            <div className="space-y-4 h-80 overflow-y-auto p-4 border rounded-md mb-4 bg-background">
+            <div className="space-y-4 h-64 md:h-80 overflow-y-auto p-4 border rounded-md mb-4 bg-background">
               {chatHistory.map((message, index) => (
                 <div key={index} className={`flex items-start gap-3 ${message.role === 'user' ? 'justify-end' : ''}`}>
                   {message.role === 'assistant' && (
@@ -68,7 +68,7 @@ export function Faq() {
                       <AvatarFallback><Bot /></AvatarFallback>
                     </Avatar>
                   )}
-                  <div className={`rounded-lg p-3 max-w-sm ${message.role === 'user' ? 'bg-primary text-primary-foreground' : 'bg-muted'}`}>
+                  <div className={`rounded-lg p-3 max-w-[80%] ${message.role === 'user' ? 'bg-primary text-primary-foreground' : 'bg-muted'}`}>
                     <p className="text-sm">{message.content}</p>
                   </div>
                    {message.role === 'user' && (
@@ -89,7 +89,7 @@ export function Faq() {
                  </div>
               )}
                {chatHistory.length === 0 && !isLoading && (
-                 <div className="flex items-center justify-center h-full text-muted-foreground">
+                 <div className="flex items-center justify-center h-full text-muted-foreground text-center">
                     <p>Ask a question to start the conversation.</p>
                  </div>
                )}
@@ -108,7 +108,7 @@ export function Faq() {
                     </FormItem>
                   )}
                 />
-                <Button type="submit" disabled={isLoading}>
+                <Button type="submit" disabled={isLoading} size="icon">
                   <Send className="h-4 w-4" />
                   <span className="sr-only">Send</span>
                 </Button>

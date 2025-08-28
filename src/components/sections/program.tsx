@@ -25,7 +25,7 @@ const day2Schedule = [
 export function Program() {
   
   const ScheduleItem = ({ event }: { event: any }) => (
-    <div className="flex items-start gap-4 py-4 transition-all duration-300 hover:bg-muted/50 -mx-6 px-6">
+    <div className="flex items-start gap-4 py-4 transition-all duration-300 hover:bg-muted/50 sm:px-6 -mx-4 px-4 sm:-mx-6">
         <div className="w-24 text-right pr-4 text-primary font-semibold flex-shrink-0">
             <Clock className="inline-block h-4 w-4 mr-1" />
             {event.time}
@@ -48,9 +48,9 @@ export function Program() {
             </p>
         </div>
         <Card className="max-w-4xl mx-auto shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-xl">
-            <CardContent className="p-6">
+            <CardContent className="p-4 sm:p-6">
                  <Tabs defaultValue="day1" className="w-full">
-                    <TabsList className="grid w-full grid-cols-2">
+                    <TabsList className="grid w-full grid-cols-1 sm:grid-cols-2">
                         <TabsTrigger value="day1">Day 1: 19th December</TabsTrigger>
                         <TabsTrigger value="day2">Day 2: 20th December</TabsTrigger>
                     </TabsList>

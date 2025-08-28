@@ -45,7 +45,7 @@ export function Footer() {
         </div>
         <div className="border-t mt-8 pt-6 flex flex-col items-center justify-between gap-4 sm:flex-row text-center sm:text-left">
           <p className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} HealthCon 2025. All rights reserved.
+            © {new Date().getFullYear()} Parul University. All rights reserved.
           </p>
           <div className="flex gap-4">
             <Link href="#" className="text-sm text-muted-foreground hover:text-primary">
