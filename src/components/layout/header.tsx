@@ -14,11 +14,6 @@ const navLinks = [
   { href: "#dates", label: "Dates" },
   { href: "#committee", label: "Committee" },
   { href: "#speakers", label: "Speakers" },
-  { href: "#program", label: "Program" },
-  { href: "#registration", label: "Registration" },
-  { href: "#venue", label: "Venue" },
-  { href: "#sponsors", label: "Sponsors" },
-  { href: "#faq", label: "FAQ" },
   { href: "#contact", label: "Contact" },
 ];
 
