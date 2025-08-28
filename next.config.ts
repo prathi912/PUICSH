@@ -1,41 +1,8 @@
-import type {NextConfig} from 'next';
-
-const nextConfig: NextConfig = {
-  /* config options here */
-  typescript: {
-    ignoreBuildErrors: true,
-  },
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
+/** @type {import('next').NextConfig} */
+const nextConfig = {
   images: {
-    remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: 'placehold.co',
-        port: '',
-        pathname: '/**',
-      },
-      {
-        protocol: 'https',
-        hostname: 'paruluniversity.ac.in',
-        port: '',
-        pathname: '/**',
-      },
-      {
-        protocol: 'https',
-        hostname: 'pinxoxpbufq92wb4.public.blob.vercel-storage.com',
-        port: '',
-        pathname: '/**',
-      },
-      {
-        protocol: 'https',
-        hostname: 'picsum.photos',
-        port: '',
-        pathname: '/**',
-      }
-    ],
+    domains: ["picsum.photos", "placehold.com", "placehold.co", "paruluniversity.ac.in", "pinxoxpbufq92wb4.public.blob.vercel-storage.com"],
   },
 };
 
-export default nextConfig;
+module.exports = nextConfig;
