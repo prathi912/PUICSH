@@ -9,7 +9,7 @@ import { useEffect, useState } from 'react';
 export function Hero() {
 
   const calculateTimeLeft = () => {
-    const difference = +new Date("2025-12-19T09:00:00") - +new Date();
+    const difference = +new Date("2025-01-24T09:00:00") - +new Date();
     let timeLeft = {};
 
     if (difference > 0) {
@@ -24,31 +24,37 @@ export function Hero() {
     return timeLeft as {days: number, hours: number, minutes: number, seconds: number};
   };
 
-  const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
+  const [timeLeft, setTimeLeft] = useState<{days?: number, hours?: number, minutes?: number, seconds?: number}>({});
 
   useEffect(() => {
-    const timer = setTimeout(() => {
+    // Set initial time on client mount to avoid hydration mismatch
+    setTimeLeft(calculateTimeLeft());
+
+    const timer = setInterval(() => {
       setTimeLeft(calculateTimeLeft());
     }, 1000);
 
-    return () => clearTimeout(timer);
-  });
+    return () => clearInterval(timer);
+  }, []);
 
   const timerComponents: any[] = [];
 
   Object.keys(timeLeft).forEach((interval) => {
-    timerComponents.push(
-      <div key={interval} className="flex flex-col items-center p-2 min-w-[60px]">
-        <span className="text-3xl md:text-4xl font-bold">{timeLeft[interval as keyof typeof timeLeft] || '0'}</span>
-        <span className="text-xs uppercase">{interval}</span>
-      </div>
-    );
+    const value = timeLeft[interval as keyof typeof timeLeft];
+    if(value !== undefined) {
+      timerComponents.push(
+        <div key={interval} className="flex flex-col items-center p-2 min-w-[60px]">
+          <span className="text-3xl md:text-4xl font-bold">{value}</span>
+          <span className="text-xs uppercase">{interval}</span>
+        </div>
+      );
+    }
   });
 
   return (
     <section id="home" className="relative w-full py-20 md:py-32 lg:py-40">
        <Image 
-        src="https://placehold.co/1920x1080.png" 
+        src="https://picsum.photos/1920/1080" 
         alt="Conference background" 
         fill
         objectFit="cover"
@@ -66,7 +72,7 @@ export function Hero() {
           <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
             <div className="flex items-center gap-2 text-md font-medium">
               <CalendarDays className="h-5 w-5 text-accent" />
-              <span>19-20th December 2025</span>
+              <span>24th - 25th January 2025</span>
             </div>
             <div className="hidden h-6 w-px bg-border sm:block" />
             <div className="flex items-center gap-2 text-md font-medium">
@@ -79,7 +85,7 @@ export function Hero() {
             <Button asChild size="lg" variant="outline" className="border-primary text-primary hover:bg-primary/10 hover:text-primary transition-transform duration-300 hover:scale-110">
               <Link href="#papers">Submit Paper</Link></Button>
           </div>
-           {timerComponents.length ? (
+           {timerComponents.length > 0 ? (
             <div className="mt-12">
               <div className="inline-flex items-center justify-center flex-wrap gap-2 md:gap-8 rounded-lg bg-card/80 p-4 md:p-6 backdrop-blur-sm">
                 {timerComponents}
