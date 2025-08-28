@@ -9,7 +9,7 @@ import { useEffect, useState } from 'react';
 export function Hero() {
 
   const calculateTimeLeft = () => {
-    const difference = +new Date("2025-01-24T09:00:00") - +new Date();
+    const difference = +new Date("2025-12-19T09:00:00") - +new Date();
     let timeLeft = {};
 
     if (difference > 0) {
@@ -72,7 +72,7 @@ export function Hero() {
           <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
             <div className="flex items-center gap-2 text-md font-medium">
               <CalendarDays className="h-5 w-5 text-accent" />
-              <span>24th - 25th January 2025</span>
+              <span>19th - 20th December 2025</span>
             </div>
             <div className="hidden h-6 w-px bg-border sm:block" />
             <div className="flex items-center gap-2 text-md font-medium">

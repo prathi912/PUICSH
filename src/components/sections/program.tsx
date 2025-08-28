@@ -51,8 +51,8 @@ export function Program() {
             <CardContent className="p-6">
                  <Tabs defaultValue="day1" className="w-full">
                     <TabsList className="grid w-full grid-cols-2">
-                        <TabsTrigger value="day1">Day 1: 24th January</TabsTrigger>
-                        <TabsTrigger value="day2">Day 2: 25th January</TabsTrigger>
+                        <TabsTrigger value="day1">Day 1: 19th December</TabsTrigger>
+                        <TabsTrigger value="day2">Day 2: 20th December</TabsTrigger>
                     </TabsList>
                     <TabsContent value="day1" className="mt-6 divide-y">
                         {day1Schedule.map((event, index) => <ScheduleItem key={index} event={event} />)}
