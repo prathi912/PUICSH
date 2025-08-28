@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { Twitter, Linkedin, Facebook } from "lucide-react";
+import { Twitter, Linkedin, Facebook, Instagram, Youtube } from "lucide-react";
 import Image from "next/image";
 
 export function Footer() {
@@ -28,14 +28,20 @@ export function Footer() {
           <div className="md:text-right">
              <h4 className="font-semibold mb-4">Follow Us</h4>
             <div className="flex md:justify-end gap-4">
-              <Link href="#" className="text-muted-foreground hover:text-primary">
+              <Link href="https://www.instagram.com/Paruluniversity/#" target="_blank" className="text-muted-foreground hover:text-primary">
+                <Instagram className="h-5 w-5" />
+              </Link>
+              <Link href="https://www.facebook.com/ParulUniversity" target="_blank" className="text-muted-foreground hover:text-primary">
+                <Facebook className="h-5 w-5" />
+              </Link>
+              <Link href="https://x.com/ParulUniversity" target="_blank" className="text-muted-foreground hover:text-primary">
                 <Twitter className="h-5 w-5" />
               </Link>
-              <Link href="#" className="text-muted-foreground hover:text-primary">
-                <Linkedin className="h-5 w-5" />
+              <Link href="https://www.youtube.com/channel/UCeXQgKg0qhTKbNRi5hpIL9A" target="_blank" className="text-muted-foreground hover:text-primary">
+                <Youtube className="h-5 w-5" />
               </Link>
-              <Link href="#" className="text-muted-foreground hover:text-primary">
-                <Facebook className="h-5 w-5" />
+              <Link href="https://www.linkedin.com/school/paruluniversity/posts/?feedView=all" target="_blank" className="text-muted-foreground hover:text-primary">
+                <Linkedin className="h-5 w-5" />
               </Link>
             </div>
           </div>

@@ -1,6 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Mail, Phone, Twitter, Linkedin, Facebook } from "lucide-react";
+import { Mail, Phone, Twitter, Linkedin, Facebook, Instagram, Youtube } from "lucide-react";
 import Link from "next/link";
 
 export function Contact() {
@@ -20,7 +20,7 @@ export function Contact() {
                 <h3 className="text-xl font-semibold mt-4">Email Us</h3>
                 <p className="text-muted-foreground mt-1">For general inquiries and support.</p>
                 <Button variant="link" asChild className="text-primary mt-2">
-                    <a href="mailto:info@healthcon2025.org">info@healthcon2025.org</a>
+                    <a href="mailto:rdc@paruluniversity.ac.in">rdc@paruluniversity.ac.in</a>
                 </Button>
             </CardContent>
           </Card>
@@ -32,7 +32,7 @@ export function Contact() {
                 <h3 className="text-xl font-semibold mt-4">Call Us</h3>
                 <p className="text-muted-foreground mt-1">For urgent matters and registration help.</p>
                 <Button variant="link" asChild className="text-primary mt-2">
-                    <a href="tel:+911234567890">+91 123 456 7890</a>
+                    <a href="tel:+919156920670">+91 9156920670</a>
                 </Button>
             </CardContent>
           </Card>
@@ -40,14 +40,20 @@ export function Contact() {
         <div className="mt-12">
             <h4 className="font-semibold mb-4 text-lg">Follow Our Socials</h4>
             <div className="flex justify-center gap-6">
-              <Link href="#" className="text-muted-foreground hover:text-primary transition-colors duration-300 transform hover:scale-125">
+               <Link href="https://www.instagram.com/Paruluniversity/#" target="_blank" className="text-muted-foreground hover:text-primary transition-colors duration-300 transform hover:scale-125">
+                <Instagram className="h-6 w-6" />
+              </Link>
+              <Link href="https://www.facebook.com/ParulUniversity" target="_blank" className="text-muted-foreground hover:text-primary transition-colors duration-300 transform hover:scale-125">
+                <Facebook className="h-6 w-6" />
+              </Link>
+              <Link href="https://x.com/ParulUniversity" target="_blank" className="text-muted-foreground hover:text-primary transition-colors duration-300 transform hover:scale-125">
                 <Twitter className="h-6 w-6" />
               </Link>
-              <Link href="#" className="text-muted-foreground hover:text-primary transition-colors duration-300 transform hover:scale-125">
-                <Linkedin className="h-6 w-6" />
+               <Link href="https://www.youtube.com/channel/UCeXQgKg0qhTKbNRi5hpIL9A" target="_blank" className="text-muted-foreground hover:text-primary transition-colors duration-300 transform hover:scale-125">
+                <Youtube className="h-6 w-6" />
               </Link>
-              <Link href="#" className="text-muted-foreground hover:text-primary transition-colors duration-300 transform hover:scale-125">
-                <Facebook className="h-6 w-6" />
+              <Link href="https://www.linkedin.com/school/paruluniversity/posts/?feedView=all" target="_blank" className="text-muted-foreground hover:text-primary transition-colors duration-300 transform hover:scale-125">
+                <Linkedin className="h-6 w-6" />
               </Link>
             </div>
         </div>
