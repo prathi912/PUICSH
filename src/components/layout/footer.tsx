@@ -10,7 +10,7 @@ export function Footer() {
         <div className="grid gap-8 md:grid-cols-3">
           <div>
             <div className="flex items-center gap-2 mb-4">
-               <Image src="https://pinxoxpbufq92wb4.public.blob.vercel-storage.com/RDC-PU-LOGO-BLACK.svg" alt="Parul University Logo" width={200} height={40} className="dark:invert" />
+               <Image src="https://pinxoxpbufq92wb4.public.blob.vercel-storage.com/RDC-PU-LOGO-BLACK.svg" alt="Parul University Logo" width={300} height={50} className="dark:invert" />
             </div>
             <p className="text-sm text-muted-foreground">
               Organized by the Parul University Research and Development Cell.
