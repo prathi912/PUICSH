@@ -34,9 +34,6 @@ export function Footer() {
               <Link href="https://www.facebook.com/ParulUniversity" target="_blank" className="text-muted-foreground hover:text-primary">
                 <Facebook className="h-5 w-5" />
               </Link>
-              <Link href="https://x.com/ParulUniversity" target="_blank" className="text-muted-foreground hover:text-primary">
-                <X className="h-5 w-5" />
-              </Link>
               <Link href="https://www.youtube.com/channel/UCeXQgKg0qhTKbNRi5hpIL9A" target="_blank" className="text-muted-foreground hover:text-primary">
                 <Youtube className="h-5 w-5" />
               </Link>

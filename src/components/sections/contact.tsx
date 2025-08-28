@@ -46,9 +46,6 @@ export function Contact() {
               <Link href="https://www.facebook.com/ParulUniversity" target="_blank" className="text-muted-foreground hover:text-primary transition-colors duration-300 transform hover:scale-125">
                 <Facebook className="h-6 w-6" />
               </Link>
-              <Link href="https://x.com/ParulUniversity" target="_blank" className="text-muted-foreground hover:text-primary transition-colors duration-300 transform hover:scale-125">
-                <X className="h-6 w-6" />
-              </Link>
                <Link href="https://www.youtube.com/channel/UCeXQgKg0qhTKbNRi5hpIL9A" target="_blank" className="text-muted-foreground hover:text-primary transition-colors duration-300 transform hover:scale-125">
                 <Youtube className="h-6 w-6" />
               </Link>
