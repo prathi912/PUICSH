@@ -60,7 +60,7 @@ export function Registration() {
                 <ul className="space-y-3 mb-8 flex-grow">
                   {tier.features.map((feature) => (
                     <li key={feature} className="flex items-start">
-                      <Check className="h-5 w-5 text-green-500 mr-2 flex-shrink-0 mt-1" />
+                      <Check className="h-5 w-5 text-primary mr-2 flex-shrink-0 mt-1" />
                       <span className="text-muted-foreground">{feature}</span>
                     </li>
                   ))}
