@@ -22,7 +22,7 @@ export function Footer() {
                  <li><Link href="#about" className="text-sm text-muted-foreground hover:text-primary">About</Link></li>
                  <li><Link href="#speakers" className="text-sm text-muted-foreground hover:text-primary">Speakers</Link></li>
                  <li><Link href="#program" className="text-sm text-muted-foreground hover:text-primary">Program</Link></li>
-                 <li><Link href="#registration" className="text-sm text-muted-foreground hover:text-primary">Register</Link></li>
+                 <li><Link href="/register" className="text-sm text-muted-foreground hover:text-primary">Register</Link></li>
              </ul>
           </div>
           <div className="md:text-right">
@@ -48,10 +48,10 @@ export function Footer() {
             © {new Date().getFullYear()} Parul University. All rights reserved.
           </p>
           <div className="flex gap-4">
-            <Link href="#" className="text-sm text-muted-foreground hover:text-primary">
+            <Link href="/privacy-policy" className="text-sm text-muted-foreground hover:text-primary">
               Privacy Policy
             </Link>
-            <Link href="#" className="text-sm text-muted-foreground hover:text-primary">
+            <Link href="/terms-of-service" className="text-sm text-muted-foreground hover:text-primary">
               Terms of Service
             </Link>
           </div>
