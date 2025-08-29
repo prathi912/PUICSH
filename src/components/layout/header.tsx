@@ -10,6 +10,12 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 import { Sheet, SheetContent, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
 import { Menu, ChevronDown } from "lucide-react";
 import Image from "next/image";
@@ -54,20 +60,20 @@ export function Header() {
 
   const closeMobileMenu = () => setMobileMenuOpen(false);
 
-  const NavItems = ({ isMobile }: { isMobile?: boolean }) => (
-     <>
+  const DesktopNav = () => (
+    <nav className="hidden items-center gap-6 lg:flex">
       {navLinks.map((link) =>
         link.isDropdown ? (
           <DropdownMenu key={link.label}>
             <DropdownMenuTrigger
-              className={`flex items-center gap-1 text-sm font-medium transition-colors text-foreground/80 hover:text-primary outline-none ${isMobile ? 'w-full justify-start' : ''}`}
+              className="flex items-center gap-1 text-sm font-medium transition-colors text-foreground/80 hover:text-primary outline-none"
             >
               {link.label} <ChevronDown className="h-4 w-4" />
             </DropdownMenuTrigger>
             <DropdownMenuContent>
               {link.items?.map((item) => (
                 <DropdownMenuItem key={item.href} asChild>
-                  <Link href={item.href} onClick={closeMobileMenu}>{item.label}</Link>
+                  <Link href={item.href}>{item.label}</Link>
                 </DropdownMenuItem>
               ))}
             </DropdownMenuContent>
@@ -77,19 +83,58 @@ export function Header() {
             key={link.href}
             href={link.href!}
             className="text-sm font-medium transition-colors text-foreground/80 hover:text-primary"
-            onClick={closeMobileMenu}
           >
             {link.label}
           </Link>
         )
       )}
-    </>
+    </nav>
   );
+
+  const MobileNav = () => (
+    <nav className="flex flex-col gap-4">
+      <Accordion type="multiple" className="w-full">
+        {navLinks.map((link) =>
+          link.isDropdown ? (
+            <AccordionItem value={link.label} key={link.label} className="border-b-0">
+              <AccordionTrigger className="flex w-full items-center justify-between py-2 text-sm font-medium text-foreground/80 hover:text-primary hover:no-underline">
+                {link.label}
+              </AccordionTrigger>
+              <AccordionContent className="pb-0 pl-4">
+                <div className="flex flex-col gap-2 pt-2 border-l">
+                  {link.items?.map((item) => (
+                    <Link
+                      key={item.href}
+                      href={item.href}
+                      className="block pl-4 py-1 text-sm text-foreground/70 hover:text-primary"
+                      onClick={closeMobileMenu}
+                    >
+                      {item.label}
+                    </Link>
+                  ))}
+                </div>
+              </AccordionContent>
+            </AccordionItem>
+          ) : (
+            <Link
+              key={link.href}
+              href={link.href!}
+              className="py-2 text-sm font-medium transition-colors text-foreground/80 hover:text-primary"
+              onClick={closeMobileMenu}
+            >
+              {link.label}
+            </Link>
+          )
+        )}
+      </Accordion>
+    </nav>
+  );
+
 
   return (
     <header
       className={`sticky top-0 z-50 w-full transition-all duration-300 ${
-        isScrolled ? "border-b border-white/20 bg-white/10 backdrop-blur-lg" : "bg-transparent"
+        isScrolled ? "border-b border-border bg-background/80 backdrop-blur-lg" : "bg-transparent"
       }`}
     >
       <div className="container mx-auto flex h-20 items-center justify-between px-4 md:px-6">
@@ -104,9 +149,7 @@ export function Header() {
             />
         </Link>
         
-        <nav className="hidden items-center gap-6 lg:flex">
-          <NavItems />
-        </nav>
+        <DesktopNav />
         
         <div className="flex items-center gap-2">
           <Button asChild className="hidden md:inline-flex bg-accent hover:bg-accent/90"><Link href="/register">Register</Link></Button>
@@ -118,21 +161,21 @@ export function Header() {
                 <span className="sr-only">Toggle navigation menu</span>
               </Button>
             </SheetTrigger>
-            <SheetContent side="left" className="w-full max-w-sm">
-                <SheetTitle className="sr-only">Mobile Menu</SheetTitle>
+            <SheetContent side="left" className="w-full max-w-sm p-0">
               <div className="p-6">
-                <Link href="/" className="mb-6 flex items-center gap-2" onClick={closeMobileMenu}>
-                    <Image 
-                        src="https://pinxoxpbufq92wb4.public.blob.vercel-storage.com/RDC-PU-LOGO-BLACK.svg" 
-                        alt="Parul University Logo" 
-                        width={180} 
-                        height={36} 
-                        className="dark:invert h-9 w-auto"
-                     />
-                </Link>
-                <nav className="flex flex-col gap-4">
-                  <NavItems isMobile />
-                </nav>
+                <div className="flex justify-between items-center mb-6">
+                  <Link href="/" className="flex items-center gap-2" onClick={closeMobileMenu}>
+                      <Image 
+                          src="https://pinxoxpbufq92wb4.public.blob.vercel-storage.com/RDC-PU-LOGO-BLACK.svg" 
+                          alt="Parul University Logo" 
+                          width={180} 
+                          height={36} 
+                          className="dark:invert h-9 w-auto"
+                       />
+                  </Link>
+                   <SheetTitle className="sr-only">Mobile Menu</SheetTitle>
+                </div>
+                <MobileNav />
                 <Button asChild className="w-full mt-6 bg-accent hover:bg-accent/90" onClick={closeMobileMenu}>
                     <Link href="/register">Register Now</Link>
                 </Button>
