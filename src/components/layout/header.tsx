@@ -1,3 +1,4 @@
+
 "use client";
 
 import React, { useState, useEffect } from "react";
@@ -9,7 +10,7 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { Sheet, SheetContent, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
 import { Menu, ChevronDown } from "lucide-react";
 import Image from "next/image";
 
@@ -118,6 +119,7 @@ export function Header() {
               </Button>
             </SheetTrigger>
             <SheetContent side="left" className="w-full max-w-sm">
+                <SheetTitle className="sr-only">Mobile Menu</SheetTitle>
               <div className="p-6">
                 <Link href="/" className="mb-6 flex items-center gap-2" onClick={closeMobileMenu}>
                     <Image 
