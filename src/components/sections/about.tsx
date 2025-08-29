@@ -18,7 +18,7 @@ export function About() {
         <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
             <div className="text-left">
-              <SectionTitle className="justify-center md:justify-start mb-4">About The Conference</SectionTitle>
+              <SectionTitle className="justify-center mb-4">About The Conference</SectionTitle>
               <p className="text-muted-foreground text-justify">
                 The 1st International Conference on Sustainable Health: Innovations, Advances, and Challenges aims to bring together leading researchers, academicians, practitioners, and policymakers from around the world to discuss and share the latest innovations, advances, and challenges in the field of sustainable health. This conference will serve as a platform for interdisciplinary collaboration and knowledge exchange, promoting the development and implementation of sustainable health solutions.
               </p>
