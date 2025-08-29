@@ -30,8 +30,8 @@ export function TargetAudience() {
           <CardContent>
               <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4 p-6 pt-4">
                   {audienceList.map((audience) => (
-                      <li key={audience} className="flex items-start">
-                           <div className="flex-shrink-0 h-2 w-2 rounded-full bg-primary mt-2.5 mr-3"></div>
+                      <li key={audience} className="flex items-center">
+                           <div className="flex-shrink-0 h-2 w-2 rounded-full bg-primary mr-3"></div>
                           <span>{audience}</span>
                       </li>
                   ))}
