@@ -6,7 +6,6 @@ import { ImportantDates } from '@/components/sections/important-dates';
 import { CallForPapers } from '@/components/sections/call-for-papers';
 import { Speakers } from '@/components/sections/speakers';
 import { Program } from '@/components/sections/program';
-import { Sponsors } from '@/components/sections/sponsors';
 import { Contact } from '@/components/sections/contact';
 import { Faq } from '@/components/sections/faq';
 import { TargetAudience } from '@/components/sections/target-audience';
@@ -25,7 +24,6 @@ export default function Home() {
         <Program />
         <TargetAudience />
         <Sessions />
-        <Sponsors />
         <Faq />
         <Contact />
       </main>
