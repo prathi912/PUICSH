@@ -7,7 +7,6 @@ import { CallForPapers } from '@/components/sections/call-for-papers';
 import { Speakers } from '@/components/sections/speakers';
 import { Committee } from '@/components/sections/committee';
 import { Program } from '@/components/sections/program';
-import { Registration } from '@/components/sections/registration';
 import { Venue } from '@/components/sections/venue';
 import { Sponsors } from '@/components/sections/sponsors';
 import { Contact } from '@/components/sections/contact';
@@ -29,7 +28,6 @@ export default function Home() {
         <Program />
         <TargetAudience />
         <Sessions />
-        <Registration />
         <Venue />
         <Sponsors />
         <Faq />
