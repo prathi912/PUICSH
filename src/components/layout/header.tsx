@@ -116,14 +116,15 @@ export function Header() {
               </AccordionContent>
             </AccordionItem>
           ) : (
-            <Link
-              key={link.href}
-              href={link.href!}
-              className="py-2 text-sm font-medium transition-colors text-foreground/80 hover:text-primary"
-              onClick={closeMobileMenu}
-            >
-              {link.label}
-            </Link>
+            <div key={link.href}>
+              <Link
+                href={link.href!}
+                className="block py-2 text-sm font-medium transition-colors text-foreground/80 hover:text-primary"
+                onClick={closeMobileMenu}
+              >
+                {link.label}
+              </Link>
+            </div>
           )
         )}
       </Accordion>
