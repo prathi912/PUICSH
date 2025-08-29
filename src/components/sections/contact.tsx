@@ -38,23 +38,6 @@ export function Contact() {
             </CardContent>
           </Card>
         </div>
-        <div className="mt-12">
-            <h4 className="font-semibold mb-4 text-lg">Follow Our Socials</h4>
-            <div className="flex justify-center gap-6">
-               <Link href="https://www.instagram.com/Paruluniversity/#" target="_blank" className="text-muted-foreground hover:text-primary transition-colors duration-300 transform hover:scale-125">
-                <Instagram className="h-6 w-6" />
-              </Link>
-              <Link href="https://www.facebook.com/ParulUniversity" target="_blank" className="text-muted-foreground hover:text-primary transition-colors duration-300 transform hover:scale-125">
-                <Facebook className="h-6 w-6" />
-              </Link>
-               <Link href="https://www.youtube.com/channel/UCeXQgKg0qhTKbNRi5hpIL9A" target="_blank" className="text-muted-foreground hover:text-primary transition-colors duration-300 transform hover:scale-125">
-                <Youtube className="h-6 w-6" />
-              </Link>
-              <Link href="https://www.linkedin.com/school/paruluniversity/posts/?feedView=all" target="_blank" className="text-muted-foreground hover:text-primary transition-colors duration-300 transform hover:scale-125">
-                <Linkedin className="h-6 w-6" />
-              </Link>
-            </div>
-        </div>
       </div>
     </section>
   );
