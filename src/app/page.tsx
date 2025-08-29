@@ -5,7 +5,6 @@ import { About } from '@/components/sections/about';
 import { ImportantDates } from '@/components/sections/important-dates';
 import { CallForPapers } from '@/components/sections/call-for-papers';
 import { Speakers } from '@/components/sections/speakers';
-import { Committee } from '@/components/sections/committee';
 import { Program } from '@/components/sections/program';
 import { Sponsors } from '@/components/sections/sponsors';
 import { Contact } from '@/components/sections/contact';
@@ -23,7 +22,6 @@ export default function Home() {
         <ImportantDates />
         <CallForPapers />
         <Speakers />
-        <Committee />
         <Program />
         <TargetAudience />
         <Sessions />

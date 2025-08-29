@@ -35,8 +35,7 @@ const navLinks = [
       { href: "/travel/near-by-attractions", label: "Nearby Attractions" },
     ],
   },
-  { href: "/#dates", label: "Dates" },
-  { href: "/#committee", label: "Committee" },
+  { href: "/committee", label: "Committee" },
   { href: "/#speakers", label: "Speakers" },
   { href: "/#contact", label: "Contact" },
 ];
