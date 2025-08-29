@@ -2,6 +2,10 @@ import type {Metadata} from 'next';
 import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
 import Script from "next/script";
+import { Inter, Space_Grotesk } from 'next/font/google';
+
+const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
+const spaceGrotesk = Space_Grotesk({ subsets: ['latin'], variable: '--font-space-grotesk' });
 
 const conferenceTitle = "1st International Conference on Sustainable Health";
 const conferenceDescription = "Innovation, Advances, & Challenges-2025";
@@ -77,7 +81,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="!scroll-smooth">
+    <html lang="en" className={`${inter.variable} ${spaceGrotesk.variable} !scroll-smooth`}>
       <head>
         <meta name="google-site-verification" content="vtfnJbrcvmHT1myoCog7e4xohj7rxnikn8cyPfvy4Cw" />
         
