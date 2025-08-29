@@ -65,9 +65,7 @@ export const metadata: Metadata = {
     },
   },
   icons: {
-    icon: '/favicon.ico',
-    shortcut: '/favicon-16x16.png',
-    apple: '/apple-touch-icon.png',
+    icon: 'https://paruluniversity.ac.in/favicon.ico',
   },
   themeColor: [
     { media: '(prefers-color-scheme: light)', color: '#ffffff' },
