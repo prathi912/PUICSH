@@ -52,7 +52,7 @@ export function Hero() {
   });
 
   return (
-    <section id="home" className="relative w-full py-10 md:py-32 lg:py-25">
+    <section id="home" className="relative w-full py-10 md:py-32 lg:py-25 transition-all duration-500 ease-out data-[state=open]:animate-in data-[state=open]:fade-in-0 data-[state=open]:zoom-in-95">
        <Image 
         src="https://www.gujarattourism.com/content/dam/gujrattourism/images/heritage-sites/laxmi-vilas-palace/Laxmi-Vilas-Palace-Thumbnail.jpg" 
         alt="Laxmi Vilas Palace" 
