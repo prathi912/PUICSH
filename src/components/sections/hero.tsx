@@ -1,3 +1,4 @@
+
 "use client";
 
 import { Button } from "@/components/ui/button";
@@ -87,7 +88,7 @@ export function Hero() {
           </div>
            {timerComponents.length > 0 ? (
             <div className="mt-12">
-              <div className="inline-flex items-center justify-center flex-wrap gap-2 md:gap-8 rounded-lg bg-card/80 p-4 md:p-6 backdrop-blur-sm">
+              <div className="inline-flex items-center justify-center flex-wrap gap-2 md:gap-8 rounded-lg bg-white/10 p-4 md:p-6 backdrop-blur-lg border border-white/20">
                 {timerComponents}
               </div>
             </div>
