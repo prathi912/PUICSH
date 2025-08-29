@@ -16,7 +16,7 @@ const travelOptions = [
     },
     {
         mode: "By Road",
-        details: "Vadodara is well-connected by a network of state and national highways. The university is located on the Vadodara-Halol highway. Regular bus services are available from the city's central bus terminal. If driving, you can use GPS for directions to Parul University, Waghodia.",
+        details: "Vadodara is well-connected by a network of state and national highways. The university is located on the Vadodara-Waghodia Road. Regular bus services are available from the city's central bus terminal. If driving, you can use GPS for directions to Parul University, Waghodia.",
         icon: <Car className="h-8 w-8 text-primary" />
     },
 ]
