@@ -44,7 +44,7 @@ export function Registration() {
       <div className="container mx-auto px-4 md:px-6">
         <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl font-bold font-headline mb-4">Registration</h2>
-            <p className="text-muted-foreground mb-12">
+            <p className="text-muted-foreground mb-12 text-justify">
                 Secure your spot at HealthCon 2025. Choose the registration package that suits you best.
             </p>
         </div>

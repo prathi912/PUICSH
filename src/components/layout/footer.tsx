@@ -12,7 +12,7 @@ export function Footer() {
             <div className="flex items-center gap-2 mb-4">
                <Image src="https://pinxoxpbufq92wb4.public.blob.vercel-storage.com/RDC-PU-LOGO-BLACK.svg" alt="Parul University Logo" width={300} height={50} className="dark:invert" />
             </div>
-            <p className="text-sm text-muted-foreground">
+            <p className="text-sm text-muted-foreground text-justify">
               Organized by the Parul University Research and Development Cell.
             </p>
           </div>

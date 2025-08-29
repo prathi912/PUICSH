@@ -52,7 +52,7 @@ export function Hero() {
   });
 
   return (
-    <section id="home" className="relative w-full py-20 md:py-32 lg:py-40">
+    <section id="home" className="relative w-full py-10 md:py-32 lg:py-25">
        <Image 
         src="https://picsum.photos/1920/1080" 
         alt="Conference background" 

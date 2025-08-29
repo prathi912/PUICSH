@@ -35,7 +35,7 @@ export function CallForPapers() {
       <div className="container mx-auto px-4 md:px-6">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl font-bold font-headline mb-4">Call for Papers</h2>
-          <p className="text-muted-foreground mb-8">
+          <p className="text-muted-foreground mb-8 text-justify">
             Researchers are invited to submit original papers/ review papers on the following topics/themes. Submissions will be peer-reviewed, and selected accepted papers will be published in the Scopus indexed journals/conference proceedings.
           </p>
         </div>

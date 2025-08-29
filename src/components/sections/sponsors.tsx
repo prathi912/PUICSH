@@ -14,7 +14,7 @@ export function Sponsors() {
     <section id="sponsors" className="py-16 md:py-24 bg-card transition-all duration-500 ease-out data-[state=open]:animate-in data-[state=open]:fade-in-0 data-[state=open]:zoom-in-95">
       <div className="container mx-auto px-4 md:px-6">
         <h2 className="text-3xl font-bold text-center mb-4 font-headline">Our Sponsors</h2>
-        <p className="max-w-2xl mx-auto text-center text-muted-foreground mb-12">
+        <p className="max-w-2xl mx-auto text-center text-muted-foreground mb-12 text-justify">
           We are grateful for the generous support of our sponsors who make this conference possible.
         </p>
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-8 items-center">

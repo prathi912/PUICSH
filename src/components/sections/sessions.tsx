@@ -54,7 +54,7 @@ export function Sessions() {
                         <CardTitle>{session.title}</CardTitle>
                     </CardHeader>
                     <CardContent>
-                        <p className="text-muted-foreground">{session.description}</p>
+                        <p className="text-muted-foreground text-justify">{session.description}</p>
                     </CardContent>
                 </Card>
             ))}

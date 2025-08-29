@@ -26,7 +26,7 @@ export function Venue() {
             <Card className="shadow-lg">
               <CardContent className="p-6">
                 <h3 className="font-bold text-lg text-primary">Conference Venue</h3>
-                <p className="mt-2 text-muted-foreground">
+                <p className="mt-2 text-muted-foreground text-justify">
                   Parul University,
                   <br />
                   P.O. Limda, Waghodia,
@@ -34,7 +34,7 @@ export function Venue() {
                   Vadodara, Gujarat, India - 391760
                 </p>
                 <h3 className="font-bold text-lg text-primary mt-6">Travel & Accommodations</h3>
-                 <p className="mt-2 text-sm text-muted-foreground">
+                 <p className="mt-2 text-sm text-muted-foreground text-justify">
                     Vadodara is well-connected by air, rail, and road. The nearest airport is Vadodara Airport (BDQ). We have negotiated special rates with nearby hotels.
                  </p>
                  <ul className="list-disc list-inside mt-2 text-muted-foreground text-sm">
