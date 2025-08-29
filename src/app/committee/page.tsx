@@ -60,7 +60,7 @@ export default function CommitteePage() {
         <div className="container mx-auto px-4 md:px-6">
             <SectionTitle className="justify-center mb-12">Conference Committee</SectionTitle>
             
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
             {Object.entries(committees).map(([title, members]) => (
                 <Card key={title} className="flex flex-col transition-transform duration-300 hover:scale-105 hover:shadow-xl">
                 <CardHeader>

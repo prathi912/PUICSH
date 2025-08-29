@@ -49,7 +49,7 @@ export function Registration() {
                 Secure your spot at the 1st International Conference on Sustainable Health. Choose the registration package that suits you best.
             </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
           {registrationTiers.map((tier) => (
             <Card key={tier.name} className={`flex flex-col shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-xl ${tier.primary ? 'border-primary border-2 relative' : ''}`}>
               {tier.primary && <div className="absolute top-0 -translate-y-1/2 left-1/2 -translate-x-1/2 px-3 py-1 text-sm font-semibold text-primary-foreground bg-primary rounded-full">Most Popular</div>}

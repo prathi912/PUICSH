@@ -55,14 +55,14 @@ export function Speakers() {
             <TabsTrigger value="international">International Speakers</TabsTrigger>
           </TabsList>
           <TabsContent value="national" className="mt-8">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
               {nationalSpeakers.map((speaker, index) => (
                 <SpeakerCard key={index} speaker={speaker} />
               ))}
             </div>
           </TabsContent>
           <TabsContent value="international" className="mt-8">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
               {internationalSpeakers.map((speaker, index) => (
                 <SpeakerCard key={index} speaker={speaker} />
               ))}
