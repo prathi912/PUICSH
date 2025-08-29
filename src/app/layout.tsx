@@ -5,7 +5,7 @@ import Script from "next/script";
 
 const conferenceTitle = "1st International Conference on Sustainable Health";
 const conferenceDescription = "Innovation, Advances, & Challenges-2025";
-const conferenceUrl = "https://healthcon-2025.com"; // Replace with your actual domain
+const conferenceUrl = "https://puicsh.paruluniversity.ac.in";
 
 export const metadata: Metadata = {
   title: {
