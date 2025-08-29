@@ -28,10 +28,10 @@ export function Hero() {
 
   useEffect(() => {
     // Set initial time on client mount to avoid hydration mismatch
-    setTimeLeft(calculateTimeleft());
+    setTimeLeft(calculateTimeLeft());
 
     const timer = setInterval(() => {
-      setTimeLeft(calculateTimeleft());
+      setTimeLeft(calculateTimeLeft());
     }, 1000);
 
     return () => clearInterval(timer);
