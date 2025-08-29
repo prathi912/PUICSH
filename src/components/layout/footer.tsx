@@ -57,9 +57,9 @@ export function Footer() {
         </div>
         
         <div className="border-t mt-8 pt-6 flex flex-col items-center justify-between gap-4 sm:flex-row text-center sm:text-left">
-          <p className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} Parul University. All rights reserved.
-          </p>
+          <div className="text-sm text-muted-foreground">
+            © 2025 <Link href="https://www.paruluniversity.ac.in" target="_blank" className="hover:text-primary">Parul University</Link>. All rights reserved.
+          </div>
           <div className="flex gap-4">
             <Link href="/privacy-policy" className="text-sm text-muted-foreground hover:text-primary">
               Privacy Policy
