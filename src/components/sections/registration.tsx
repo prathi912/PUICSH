@@ -46,7 +46,7 @@ export function Registration() {
         <div className="max-w-4xl mx-auto text-center">
             <SectionTitle className="justify-center mb-4">Registration</SectionTitle>
             <p className="text-muted-foreground mb-12 text-justify">
-                Secure your spot at HealthCon 2025. Choose the registration package that suits you best.
+                Secure your spot at the 1st International Conference on Sustainable Health. Choose the registration package that suits you best.
             </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch">
