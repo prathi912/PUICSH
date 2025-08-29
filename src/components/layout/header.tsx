@@ -8,13 +8,14 @@ import { Menu } from "lucide-react";
 import Image from "next/image";
 
 const navLinks = [
-  { href: "#home", label: "Home" },
-  { href: "#about", label: "About" },
-  { href: "#papers", label: "Call for Papers" },
-  { href: "#dates", label: "Dates" },
-  { href: "#committee", label: "Committee" },
-  { href: "#speakers", label: "Speakers" },
-  { href: "#contact", label: "Contact" },
+  { href: "/", label: "Home" },
+  { href: "/#about", label: "About" },
+  { href: "/#papers", label: "Call for Papers" },
+  { href: "/#dates", label: "Dates" },
+  { href: "/crc-info", label: "CRC Info" },
+  { href: "/#committee", label: "Committee" },
+  { href: "/#speakers", label: "Speakers" },
+  { href: "/#contact", label: "Contact" },
 ];
 
 export function Header() {
@@ -46,7 +47,7 @@ export function Header() {
       }`}
     >
       <div className="container mx-auto flex h-20 items-center justify-between px-4 md:px-6">
-        <Link href="#home" className="flex items-center gap-2 mr-6">
+        <Link href="/" className="flex items-center gap-2 mr-6">
            <Image src="https://pinxoxpbufq92wb4.public.blob.vercel-storage.com/RDC-PU-LOGO-BLACK.svg" alt="Parul University Logo" width={200} height={40} className="dark:invert h-10 w-auto" />
         </Link>
         <div className="flex items-center gap-4">
@@ -56,7 +57,7 @@ export function Header() {
             ))}
           </nav>
           <div className="flex items-center gap-2">
-            <Button asChild className="hidden md:inline-flex bg-accent hover:bg-accent/90"><Link href="#registration">Register Now</Link></Button>
+            <Button asChild className="hidden md:inline-flex bg-accent hover:bg-accent/90"><Link href="/#registration">Register Now</Link></Button>
             <Sheet open={mobileMenuOpen} onOpenChange={setMobileMenuOpen}>
               <SheetTrigger asChild>
                 <Button variant="outline" size="icon" className="md:hidden">
@@ -66,7 +67,7 @@ export function Header() {
               </SheetTrigger>
               <SheetContent side="left" className="w-full max-w-xs">
                 <div className="flex flex-col gap-6 p-6">
-                  <Link href="#home" className="flex items-center gap-2" onClick={() => setMobileMenuOpen(false)}>
+                  <Link href="/" className="flex items-center gap-2" onClick={() => setMobileMenuOpen(false)}>
                       <Image src="https://pinxoxpbufq92wb4.public.blob.vercel-storage.com/RDC-PU-LOGO-BLACK.svg" alt="Parul University Logo" width={200} height={40} className="dark:invert" />
                   </Link>
                   <nav className="flex flex-col gap-4">
@@ -74,7 +75,7 @@ export function Header() {
                       <NavLink key={link.href} {...link} />
                     ))}
                   </nav>
-                  <Button asChild className="w-full bg-accent hover:bg-accent/90"><Link href="#registration">Register Now</Link></Button>
+                  <Button asChild className="w-full bg-accent hover:bg-accent/90"><Link href="/#registration">Register Now</Link></Button>
                 </div>
               </SheetContent>
             </Sheet>
