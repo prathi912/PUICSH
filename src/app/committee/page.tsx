@@ -48,7 +48,7 @@ const committees = {
   "Accommodation Committee": [{ name: "Dr. Soyebkhan Pathan" }, { name: "Dr. Prasanna Mathad" }],
   "Venue Management Committee": [{ name: "Dr. Juhi Saxena" }, { name: "Dr. Meenu Khan" }, { name: "Dr. Anwesh Dey Khanra" }, { name: "Dr. Pujit Bhatt" }, { name: "Mr. Jaivik Pathak" }],
   "Website Management Committee": [{ name: "Mr. Pranav Rathi" }],
-  "Media and Publicity Committee": [{ name: "Dr. Vishal Sorathiya" }, { name: "Dr. Dhawani Upadhyay" }, { name: "Dr. Ankita Priyadarshini" }],
+  "Media and Publicity Committee": [{ name: "Dr. Vishal Sorathiya" }, { name: "Dr. Dhwani Upadhyay" }, { name: "Dr. Ankita Priyadarshini" }],
   "Volunteer/Protocol Officer": [{ name: "Research Scholars" }],
 };
 

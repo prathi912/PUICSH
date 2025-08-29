@@ -1,6 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Download, ExternalLink, FileText, MicVocal, Presentation } from "lucide-react";
+import { Download, ExternalLink, FileText, MicVocal, Presentation, BookOpenCheck } from "lucide-react";
 import Link from "next/link";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { SectionTitle } from "@/components/ui/section-title";
@@ -22,6 +22,23 @@ const oralInstructions = [
   "The topic presented by the presenting author should be their research work.",
   "Abstracts not complying with any of the above conditions will not be accepted.",
   "The time given to present the poster will be 8 minutes and 2 minutes for a question session."
+];
+
+const publicationOpportunities = [
+    {
+      main: "Conference Proceedings (Scopus indexed)",
+      subItems: [
+        "E3S Web of conference",
+        "AIP Conference Proceedings",
+        "IOP Conference Proceedings",
+      ]
+    },
+    {
+        main: "Articles in special issues in journals (Scopus indexed) and selected Springer Journal"
+    },
+    {
+        main: "Books chapters in reputed publications (Scopus indexed)"
+    }
 ];
 
 export function SubmissionGuidelines() {
@@ -47,16 +64,33 @@ export function SubmissionGuidelines() {
           </Card>
 
           <div className="grid md:grid-cols-2 gap-8 mb-8">
-            <Card className="transition-transform duration-300 hover:scale-105 hover:shadow-xl">
-                <CardHeader>
-                    <CardTitle>Publication</CardTitle>
-                </CardHeader>
-                <CardContent>
-                    <p className="text-muted-foreground text-justify">
-                        All accepted and registered papers under this conference will be submitted to Springer, Lecture Notes in Electrical Engineering. Springer LNEE is now indexed by: ISI Proceedings, DBLP, Ulrich’s, EI Compendex, SCOPUS, Zentralblatt Math, MetaPress, Springerlink.
-                    </p>
-                </CardContent>
-            </Card>
+             <Card className="text-left shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+              <CardHeader>
+                  <CardTitle className="flex items-center gap-2">
+                      <BookOpenCheck className="h-6 w-6 text-primary" />
+                      <span>Publication Opportunities</span>
+                  </CardTitle>
+              </CardHeader>
+              <CardContent>
+                  <ul className="space-y-3">
+                      {publicationOpportunities.map((opportunity, index) => (
+                          <li key={index}>
+                              <div className="flex items-start">
+                                 <div className="flex-shrink-0 h-2 w-2 rounded-full bg-primary mt-2 mr-3"></div>
+                                <span>{opportunity.main}</span>
+                              </div>
+                              {opportunity.subItems && (
+                                <ul className="ml-8 mt-2 space-y-2 list-disc list-inside">
+                                    {opportunity.subItems.map((sub, subIndex) => (
+                                        <li key={subIndex}>{sub}</li>
+                                    ))}
+                                </ul>
+                              )}
+                          </li>
+                      ))}
+                  </ul>
+              </CardContent>
+          </Card>
             <Card className="transition-transform duration-300 hover:scale-105 hover:shadow-xl">
                 <CardHeader>
                     <CardTitle>Formatting</CardTitle>
@@ -126,6 +160,13 @@ export function SubmissionGuidelines() {
             </AlertDescription>
           </Alert>
 
+          <Alert className="mt-8">
+            <FileText className="h-4 w-4" />
+            <AlertTitle>Plagiarism</AlertTitle>
+            <AlertDescription className="text-justify">
+              All papers submitted to the conference will be checked for plagiarism. If plagiarism is detected, the paper will be rejected. The organizing committee's decision is final.
+            </AlertDescription>
+          </Alert>
         </div>
       </div>
     </section>
