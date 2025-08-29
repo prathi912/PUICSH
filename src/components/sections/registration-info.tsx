@@ -20,13 +20,13 @@ export function RegistrationInfo() {
     <section id="registration-info" className="py-16 md:py-24 bg-background">
       <div className="container mx-auto px-4 md:px-6">
         <div className="max-w-4xl mx-auto">
-            <Card className="shadow-lg mb-8">
+            <Card className="shadow-lg">
                 <CardHeader>
                     <CardTitle className="text-2xl font-bold font-headline">Online Registration & Payment Policy</CardTitle>
                     <CardDescription>Instructions for Author(s) Registration & Payment of Registration Fee</CardDescription>
                 </CardHeader>
                 <CardContent>
-                     <ul className="space-y-4">
+                     <ul className="space-y-4 mb-8">
                         {instructions.map((item, index) => (
                         <li key={index} className="flex items-start">
                             <CheckCircle className="h-5 w-5 text-primary mr-3 flex-shrink-0 mt-1" />
@@ -34,31 +34,23 @@ export function RegistrationInfo() {
                         </li>
                         ))}
                     </ul>
+
+                    <div className="border-t pt-8 grid md:grid-cols-2 gap-8">
+                        <div>
+                            <h3 className="font-bold font-headline text-lg mb-2">Registration Fee (Physical Mode):</h3>
+                            <p className="text-muted-foreground text-justify">
+                            This fee includes access to Inaugural Session, Keynotes/Invited Lectures, Oral Paper Presentation Sessions, Networking, Conference Lunch and Refreshment, Conference Kit, Participation/Presentation Certificate. The conference is non-residential and delegates are kindly requested to make their own arrangement for accommodation. In case of any queries, feel free to e-mail the organizing team.
+                            </p>
+                        </div>
+                        <div>
+                            <h3 className="font-bold font-headline text-lg mb-2">Registration Fee (Online Mode):</h3>
+                            <p className="text-muted-foreground text-justify">
+                            This fee includes access to Inaugural Session, Keynotes/Invited Lectures, Oral Paper Presentation Sessions in online mode, Participation/Presentation Certificate (through e-mail after the completion of conference).
+                            </p>
+                        </div>
+                    </div>
                 </CardContent>
             </Card>
-
-            <div className="grid md:grid-cols-2 gap-8">
-                <Card className="shadow-lg">
-                    <CardHeader>
-                        <CardTitle className="font-bold font-headline">Registration Fee (Physical Mode):</CardTitle>
-                    </CardHeader>
-                    <CardContent>
-                        <p className="text-muted-foreground text-justify">
-                        This fee includes access to Inaugural Session, Keynotes/Invited Lectures, Oral Paper Presentation Sessions, Networking, Conference Lunch and Refreshment, Conference Kit, Participation/Presentation Certificate. The conference is non-residential and delegates are kindly requested to make their own arrangement for accommodation. In case of any queries, feel free to e-mail the organizing team.
-                        </p>
-                    </CardContent>
-                </Card>
-                 <Card className="shadow-lg">
-                    <CardHeader>
-                        <CardTitle className="font-bold font-headline">Registration Fee (Online Mode):</CardTitle>
-                    </CardHeader>
-                    <CardContent>
-                        <p className="text-muted-foreground text-justify">
-                        This fee includes access to Inaugural Session, Keynotes/Invited Lectures, Oral Paper Presentation Sessions in online mode, Participation/Presentation Certificate (through e-mail after the completion of conference).
-                        </p>
-                    </CardContent>
-                </Card>
-            </div>
         </div>
       </div>
     </section>
