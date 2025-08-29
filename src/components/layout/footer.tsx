@@ -13,7 +13,7 @@ export function Footer() {
                <Image src="https://pinxoxpbufq92wb4.public.blob.vercel-storage.com/RDC-PU-LOGO-BLACK.svg" alt="Parul University Logo" width={300} height={50} className="dark:invert" />
             </div>
             <p className="text-sm text-muted-foreground text-justify">
-              Organized by the Parul University Research and Development Cell.
+              Organised by Parul University Research & Development Cell, Department of Life Sciences
             </p>
           </div>
           <div className="md:text-center">
