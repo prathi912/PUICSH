@@ -1,5 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Users } from "lucide-react";
+import { SectionTitle } from "@/components/ui/section-title";
 
 const audienceList = [
     "Researchers and Academicians",
@@ -18,10 +19,12 @@ export function TargetAudience() {
       <div className="container mx-auto px-4 md:px-6">
         <Card className="max-w-4xl mx-auto shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-xl">
           <CardHeader>
-            <CardTitle className="flex items-center gap-2 text-3xl font-bold font-headline text-center justify-center">
-                <Users className="h-8 w-8 text-primary" />
+            <div className="flex justify-center mb-4">
+              <SectionTitle>
+                <Users className="h-8 w-8 text-primary mr-2" />
                 <span>Target Audience</span>
-            </CardTitle>
+              </SectionTitle>
+            </div>
           </CardHeader>
           <CardContent>
               <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4 p-6 pt-4">

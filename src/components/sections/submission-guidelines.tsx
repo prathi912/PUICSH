@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Download, ExternalLink, FileText, MicVocal, Presentation } from "lucide-react";
 import Link from "next/link";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
+import { SectionTitle } from "@/components/ui/section-title";
 
 const posterInstructions = [
   "The topic should be relevant to the thrust area.",
@@ -27,7 +28,7 @@ export function SubmissionGuidelines() {
   return (
     <section id="submission-guidelines" className="py-16 md:py-24 bg-card">
       <div className="container mx-auto px-4 md:px-6">
-        <h2 className="text-3xl font-bold text-center mb-12 font-headline">Submission Guidelines</h2>
+        <SectionTitle className="justify-center mb-12">Submission Guidelines</SectionTitle>
         <div className="max-w-4xl mx-auto">
           <Card className="shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-xl mb-8">
             <CardHeader>

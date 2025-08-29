@@ -13,6 +13,7 @@ import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/com
 import { Form, FormControl, FormField, FormItem, FormMessage } from "@/components/ui/form";
 import { Skeleton } from "@/components/ui/skeleton";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { SectionTitle } from "@/components/ui/section-title";
 
 const faqSchema = z.object({
   question: z.string().min(5, "Question must be at least 5 characters."),
@@ -56,7 +57,7 @@ export function Faq() {
       <div className="container mx-auto px-4 md:px-6">
         <Card className="max-w-3xl mx-auto shadow-lg">
           <CardHeader className="text-center">
-            <CardTitle className="text-3xl font-bold font-headline">Frequently Asked Questions</CardTitle>
+            <SectionTitle className="justify-center">Frequently Asked Questions</SectionTitle>
             <CardDescription>Have a question? Ask our AI assistant!</CardDescription>
           </CardHeader>
           <CardContent>

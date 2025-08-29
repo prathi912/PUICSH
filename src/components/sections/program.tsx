@@ -2,6 +2,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Button } from "@/components/ui/button";
 import { Download, Clock, MapPin, Mic } from "lucide-react";
+import { SectionTitle } from "@/components/ui/section-title";
 
 const day1Schedule = [
   { time: "09:00 - 10:00", title: "Registration & Welcome Coffee", location: "Lobby" },
@@ -42,7 +43,7 @@ export function Program() {
     <section id="program" className="py-16 md:py-24 transition-all duration-500 ease-out data-[state=open]:animate-in data-[state=open]:fade-in-0 data-[state=open]:zoom-in-95">
       <div className="container mx-auto px-4 md:px-6">
         <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl font-bold font-headline mb-4">Conference Program</h2>
+            <SectionTitle className="justify-center mb-4">Conference Program</SectionTitle>
             <p className="text-muted-foreground mb-8 text-justify">
             Here’s a glimpse of what to expect. The full, detailed schedule will be available for download soon.
             </p>

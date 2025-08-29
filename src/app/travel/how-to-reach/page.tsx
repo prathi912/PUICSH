@@ -2,6 +2,7 @@ import { Header } from '@/components/layout/header';
 import { Footer } from '@/components/layout/footer';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Plane, Train, Car } from 'lucide-react';
+import { SectionTitle } from '@/components/ui/section-title';
 
 const travelOptions = [
     {
@@ -27,7 +28,7 @@ export default function HowToReachPage() {
       <Header />
       <main className="flex-1 py-16 md:py-24">
         <div className="container mx-auto px-4 md:px-6">
-          <h1 className="text-3xl font-bold text-center mb-12 font-headline">How to Reach</h1>
+          <SectionTitle className="justify-center mb-12">How to Reach</SectionTitle>
           <div className="max-w-4xl mx-auto">
              <div className="grid grid-cols-1 gap-8">
                 {travelOptions.map((option) => (

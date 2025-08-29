@@ -2,6 +2,7 @@ import { Header } from '@/components/layout/header';
 import { Footer } from '@/components/layout/footer';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import Image from 'next/image';
+import { SectionTitle } from '@/components/ui/section-title';
 
 const attractions = [
   {
@@ -36,7 +37,7 @@ export default function NearbyAttractionsPage() {
       <Header />
       <main className="flex-1 py-16 md:py-24">
         <div className="container mx-auto px-4 md:px-6">
-          <h1 className="text-3xl font-bold text-center mb-4 font-headline">Nearby Attractions</h1>
+          <SectionTitle className="justify-center mb-4">Nearby Attractions</SectionTitle>
           <p className="max-w-2xl mx-auto text-center text-muted-foreground mb-12 text-justify">
             Explore the rich cultural heritage and scenic beauty of Vadodara and its surroundings during your visit.
           </p>

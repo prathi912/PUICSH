@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { CheckCircle } from "lucide-react";
 import Image from "next/image";
+import { SectionTitle } from "@/components/ui/section-title";
 
 const objectives = [
   "To highlight cutting-edge research and innovations in sustainable health.",
@@ -17,7 +18,7 @@ export function About() {
         <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
             <div className="text-left">
-              <h2 className="text-3xl font-bold font-headline mb-4">About The Conference</h2>
+              <SectionTitle className="mb-4">About The Conference</SectionTitle>
               <p className="text-muted-foreground text-justify">
                 The 1st International Conference on Sustainable Health: Innovations, Advances, and Challenges aims to bring together leading researchers, academicians, practitioners, and policymakers from around the world to discuss and share the latest innovations, advances, and challenges in the field of sustainable health. This conference will serve as a platform for interdisciplinary collaboration and knowledge exchange, promoting the development and implementation of sustainable health solutions.
               </p>
@@ -29,7 +30,7 @@ export function About() {
 
           <div className="mb-16">
              <div className="text-center mb-8">
-                 <h3 className="text-2xl font-bold font-headline">About Parul University</h3>
+                <SectionTitle className="justify-center">About Parul University</SectionTitle>
              </div>
              <div className="grid md:grid-cols-2 gap-12 items-center">
                 <div>
@@ -51,7 +52,7 @@ export function About() {
           </div>
 
           <div>
-             <h3 className="text-2xl font-bold font-headline text-center mb-8">Objectives</h3>
+             <SectionTitle className="justify-center mb-8">Objectives</SectionTitle>
              <ul className="space-y-4 max-w-4xl mx-auto">
                 {objectives.map((objective, index) => (
                   <li key={index} className="flex items-start">

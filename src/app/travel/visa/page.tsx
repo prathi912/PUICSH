@@ -5,6 +5,7 @@ import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
 import { FileText, AlertTriangle, ExternalLink } from 'lucide-react';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
+import { SectionTitle } from '@/components/ui/section-title';
 
 export default function VisaPage() {
   return (
@@ -13,7 +14,7 @@ export default function VisaPage() {
       <main className="flex-1 py-16 md:py-24">
         <div className="container mx-auto px-4 md:px-6">
           <div className="max-w-4xl mx-auto">
-            <h1 className="text-3xl font-bold text-center mb-12 font-headline">Visa Information</h1>
+            <SectionTitle className="justify-center mb-12">Visa Information</SectionTitle>
 
             <Card className="mb-8 shadow-lg">
                 <CardHeader>

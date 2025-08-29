@@ -2,6 +2,7 @@ import { Header } from '@/components/layout/header';
 import { Footer } from '@/components/layout/footer';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { BedDouble, Building, Star } from 'lucide-react';
+import { SectionTitle } from '@/components/ui/section-title';
 
 const accommodations = [
   {
@@ -36,7 +37,7 @@ export default function AccommodationPage() {
       <Header />
       <main className="flex-1 py-16 md:py-24">
         <div className="container mx-auto px-4 md:px-6">
-          <h1 className="text-3xl font-bold text-center mb-12 font-headline">Accommodation</h1>
+          <SectionTitle className="justify-center mb-12">Accommodation</SectionTitle>
           <div className="max-w-4xl mx-auto">
             <p className="text-center text-muted-foreground mb-8 text-justify">
               Vadodara offers a range of accommodation options to suit every budget and preference. We have negotiated special rates with several nearby hotels for conference attendees. Please mention the conference when booking to avail the discount. The conference is non-residential and delegates are kindly requested to make their own arrangement for accommodation.

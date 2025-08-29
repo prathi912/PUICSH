@@ -1,4 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
+import { SectionTitle } from "@/components/ui/section-title";
 
 const committees = {
   "Chief Patron": [
@@ -53,7 +54,7 @@ export function Committee() {
   return (
     <section id="committee" className="py-16 md:py-24 bg-card">
       <div className="container mx-auto px-4 md:px-6">
-        <h2 className="text-3xl font-bold text-center mb-12 font-headline">Conference Committee</h2>
+        <SectionTitle className="justify-center mb-12">Conference Committee</SectionTitle>
         
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
           {Object.entries(committees).map(([title, members]) => (

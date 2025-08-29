@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { SectionTitle } from "@/components/ui/section-title";
 
 const sponsors = [
   { name: "PharmaCo", logo: "https://placehold.co/200x100.png", hint: "pharmaceuticals logo" },
@@ -13,7 +14,7 @@ export function Sponsors() {
   return (
     <section id="sponsors" className="py-16 md:py-24 bg-card transition-all duration-500 ease-out data-[state=open]:animate-in data-[state=open]:fade-in-0 data-[state=open]:zoom-in-95">
       <div className="container mx-auto px-4 md:px-6">
-        <h2 className="text-3xl font-bold text-center mb-4 font-headline">Our Sponsors</h2>
+        <SectionTitle className="justify-center mb-4">Our Sponsors</SectionTitle>
         <p className="max-w-2xl mx-auto text-center text-muted-foreground mb-12 text-justify">
           We are grateful for the generous support of our sponsors who make this conference possible.
         </p>

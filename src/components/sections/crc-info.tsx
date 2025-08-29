@@ -1,6 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { FileText, AlertTriangle } from "lucide-react";
+import { SectionTitle } from "@/components/ui/section-title";
 
 const guidelines = [
   "You are advised to address the comments of the reviewers in your final paper suitably which are intended to help you to improve your paper for final publication.",
@@ -21,7 +22,7 @@ export function CrcInfo() {
     <section id="crc-info" className="py-16 md:py-24">
       <div className="container mx-auto px-4 md:px-6">
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-3xl font-bold text-center mb-4 font-headline">Guidelines for Preparation of Camera Ready Copy (CRC)</h1>
+          <SectionTitle className="justify-center mb-4 text-center">Guidelines for Preparation of Camera Ready Copy (CRC)</SectionTitle>
           
           <Card className="mt-8 shadow-lg">
             <CardHeader>

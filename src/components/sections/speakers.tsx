@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { SectionTitle } from "@/components/ui/section-title";
 
 const nationalSpeakers = [
   { name: "Prof. Alok Dhawan", affiliation: "Director, Centre of Biomedical Research, SGPGI, Lucknow" },
@@ -47,7 +48,7 @@ export function Speakers() {
   return (
     <section id="speakers" className="py-16 md:py-24 transition-all duration-500 ease-out data-[state=open]:animate-in data-[state=open]:fade-in-0 data-[state=open]:zoom-in-95">
       <div className="container mx-auto px-4 md:px-6">
-        <h2 className="text-3xl font-bold text-center mb-12 font-headline">Keynote Speakers</h2>
+        <SectionTitle className="justify-center mb-12">Keynote Speakers</SectionTitle>
         <Tabs defaultValue="national" className="w-full max-w-6xl mx-auto">
           <TabsList className="grid w-full grid-cols-2">
             <TabsTrigger value="national">National Speakers</TabsTrigger>
