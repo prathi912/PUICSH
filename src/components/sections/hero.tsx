@@ -28,10 +28,10 @@ export function Hero() {
 
   useEffect(() => {
     // Set initial time on client mount to avoid hydration mismatch
-    setTimeLeft(calculateTimeLeft());
+    setTimeLeft(calculateTimeleft());
 
     const timer = setInterval(() => {
-      setTimeLeft(calculateTimeLeft());
+      setTimeLeft(calculateTimeleft());
     }, 1000);
 
     return () => clearInterval(timer);
@@ -54,12 +54,12 @@ export function Hero() {
   return (
     <section id="home" className="relative w-full py-10 md:py-32 lg:py-25">
        <Image 
-        src="https://picsum.photos/1920/1080" 
-        alt="Conference background" 
+        src="https://www.gujarattourism.com/content/dam/gujrattourism/images/heritage-sites/laxmi-vilas-palace/Laxmi-Vilas-Palace-Thumbnail.jpg" 
+        alt="Laxmi Vilas Palace" 
         fill
         objectFit="cover"
         className="opacity-10"
-        data-ai-hint="healthcare sustainability"
+        data-ai-hint="indian palace"
       />
       <div className="container mx-auto px-4 md:px-6 text-center relative z-10">
         <div className="max-w-3xl mx-auto">
