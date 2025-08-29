@@ -15,7 +15,10 @@ export const metadata: Metadata = {
   description: conferenceDescription,
   keywords: [
     "sustainable health", "health conference", "medical innovation", "biomaterials", 
-    "global health", "Parul University", "Vadodara", "conference 2025"
+    "global health", "Parul University", "Vadodara", "conference 2025",
+    "health technologies", "functional biomaterials", "health policies", "nanotechnology in health",
+    "diagnostic tools", "AI in health", "ML in health", "IoT in health", "biodegradable biomaterials",
+    "public health", "health research", "international conference", "academic conference"
   ],
   authors: [{ name: "Parul University" }],
   creator: "Parul University Research & Development Cell",
