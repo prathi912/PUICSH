@@ -25,6 +25,16 @@ const navLinks = [
       { href: "/register", label: "Register" },
     ],
   },
+  {
+    label: "Travel",
+    isDropdown: true,
+    items: [
+      { href: "/travel/visa", label: "Visa" },
+      { href: "/travel/how-to-reach", label: "How to Reach" },
+      { href: "/travel/accommodation", label: "Accommodation" },
+      { href: "/travel/near-by-attractions", label: "Nearby Attractions" },
+    ],
+  },
   { href: "/#dates", label: "Dates" },
   { href: "/#committee", label: "Committee" },
   { href: "/#speakers", label: "Speakers" },
@@ -91,7 +101,7 @@ export function Header() {
             <NavItems />
           </nav>
           <div className="flex items-center gap-2">
-            <Button asChild className="hidden md:inline-flex bg-accent hover:bg-accent/90"><Link href="/#registration">Register Now</Link></Button>
+            <Button asChild className="hidden md:inline-flex bg-accent hover:bg-accent/90"><Link href="/register">Register Now</Link></Button>
             <Sheet open={mobileMenuOpen} onOpenChange={setMobileMenuOpen}>
               <SheetTrigger asChild>
                 <Button variant="outline" size="icon" className="md:hidden">
@@ -107,7 +117,7 @@ export function Header() {
                   <nav className="flex flex-col gap-4">
                     <NavItems />
                   </nav>
-                  <Button asChild className="w-full bg-accent hover:bg-accent/90"><Link href="/#registration">Register Now</Link></Button>
+                  <Button asChild className="w-full bg-accent hover:bg-accent/90"><Link href="/register">Register Now</Link></Button>
                 </div>
               </SheetContent>
             </Sheet>
