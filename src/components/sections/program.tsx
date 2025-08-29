@@ -5,21 +5,20 @@ import { Download, Clock, MapPin, Mic } from "lucide-react";
 import { SectionTitle } from "@/components/ui/section-title";
 
 const day1Schedule = [
-  { time: "09:00 - 10:00", title: "Registration & Welcome Coffee", location: "Lobby" },
-  { time: "10:00 - 10:30", title: "Opening Ceremony & Keynote", speaker: "Dr. Evelyn Reed", location: "Main Auditorium" },
-  { time: "10:30 - 12:00", title: "Session 1: AI in Diagnostics", location: "Hall A" },
-  { time: "12:00 - 13:00", title: "Lunch Break", location: "Dining Hall" },
-  { time: "13:00 - 14:30", title: "Session 2: Telemedicine Advances", location: "Hall B" },
-  { time: "15:00 - 16:30", title: "Workshop: Sustainable Lab Practices", speaker: "Dr. Ben Carter", location: "Workshop Room 1" },
+  { time: "09:00 - 10:00", title: "Registration & Welcome Coffee", location: "I Love PU Garden" },
+  { time: "10:00 - 10:30", title: "Opening Ceremony & Keynote", speaker: "--", location: "Central Auditorium" },
+  { time: "10:30 - 12:00", title: "Session 1: AI in Diagnostics", location: "Central Auditorium" },
+  { time: "12:00 - 13:00", title: "Lunch Break", location: "Indian Salt" },
+  { time: "13:00 - 14:30", title: "Session 2: Telemedicine Advances", location: "West Hall (Admin)" },
+  { time: "15:00 - 16:30", title: "Workshop: Sustainable Lab Practices", speaker: "--", location: "West Hall (Admin)" },
 ];
 
 const day2Schedule = [
-  { time: "09:30 - 10:30", title: "Keynote: Genomics and Personalized Medicine", speaker: "Dr. Sofia Khan", location: "Main Auditorium" },
-  { time: "10:30 - 12:00", title: "Session 3: Global Health Challenges", location: "Hall A" },
-  { time: "12:00 - 13:00", title: "Lunch Break", location: "Dining Hall" },
-  { time: "13:00 - 14:30", title: "Session 4: Innovations in Medical Devices", location: "Hall B" },
-  { time: "14:30 - 16:00", title: "Poster Presentations & Networking", location: "Exhibition Hall" },
-  { time: "16:00 - 16:30", title: "Closing Remarks & Awards", location: "Main Auditorium" },
+  { time: "09:30 - 10:30", title: "Keynote: Genomics and Personalized Medicine", speaker: "--", location: "Central Auditorium" },
+  { time: "10:30 - 12:00", title: "Session 3: Global Health Challenges", location: "West Hall (Admin)" },
+  { time: "12:00 - 13:00", title: "Lunch Break", location: "Indian Salth" },
+  { time: "13:00 - 14:30", title: "Session 4: Innovations in Medical Devices", location: "West Hall (Admin)" },
+  { time: "14:30 - 16:00", title: "Poster Presentations & Networking", location: "Bhagat Singh Bhawan" }
 ];
 
 
