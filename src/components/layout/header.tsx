@@ -22,6 +22,7 @@ const navLinks = [
     items: [
       { href: "/submission-info", label: "Submission Info" },
       { href: "/crc-info", label: "CRC Info" },
+      { href: "/register", label: "Register" },
     ],
   },
   { href: "/#dates", label: "Dates" },
