@@ -3,16 +3,28 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import { Menu } from "lucide-react";
+import { Menu, ChevronDown } from "lucide-react";
 import Image from "next/image";
 
 const navLinks = [
   { href: "/", label: "Home" },
   { href: "/#about", label: "About" },
-  { href: "/#papers", label: "Call for Papers" },
+  {
+    label: "Call for Papers",
+    isDropdown: true,
+    items: [
+      { href: "/submission-info", label: "Submission Info" },
+      { href: "/crc-info", label: "CRC Info" },
+    ],
+  },
   { href: "/#dates", label: "Dates" },
-  { href: "/crc-info", label: "CRC Info" },
   { href: "/#committee", label: "Committee" },
   { href: "/#speakers", label: "Speakers" },
   { href: "/#contact", label: "Contact" },
@@ -39,6 +51,29 @@ export function Header() {
       {label}
     </Link>
   );
+  
+  const NavItems = () => (
+     <>
+      {navLinks.map((link) =>
+        link.isDropdown ? (
+          <DropdownMenu key={link.label}>
+            <DropdownMenuTrigger className="flex items-center gap-1 text-sm font-medium transition-colors text-foreground/80 hover:text-primary outline-none">
+              {link.label} <ChevronDown className="h-4 w-4" />
+            </DropdownMenuTrigger>
+            <DropdownMenuContent>
+              {link.items?.map((item) => (
+                <DropdownMenuItem key={item.href} asChild>
+                  <Link href={item.href}>{item.label}</Link>
+                </DropdownMenuItem>
+              ))}
+            </DropdownMenuContent>
+          </DropdownMenu>
+        ) : (
+          <NavLink key={link.href} href={link.href!} label={link.label} />
+        )
+      )}
+    </>
+  )
 
   return (
     <header
@@ -52,9 +87,7 @@ export function Header() {
         </Link>
         <div className="flex items-center gap-4">
            <nav className="hidden items-center gap-6 md:flex">
-            {navLinks.map((link) => (
-              <NavLink key={link.href} {...link} />
-            ))}
+            <NavItems />
           </nav>
           <div className="flex items-center gap-2">
             <Button asChild className="hidden md:inline-flex bg-accent hover:bg-accent/90"><Link href="/#registration">Register Now</Link></Button>
@@ -71,9 +104,7 @@ export function Header() {
                       <Image src="https://pinxoxpbufq92wb4.public.blob.vercel-storage.com/RDC-PU-LOGO-BLACK.svg" alt="Parul University Logo" width={200} height={40} className="dark:invert" />
                   </Link>
                   <nav className="flex flex-col gap-4">
-                    {navLinks.map((link) => (
-                      <NavLink key={link.href} {...link} />
-                    ))}
+                    <NavItems />
                   </nav>
                   <Button asChild className="w-full bg-accent hover:bg-accent/90"><Link href="/#registration">Register Now</Link></Button>
                 </div>

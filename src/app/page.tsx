@@ -14,7 +14,6 @@ import { Contact } from '@/components/sections/contact';
 import { Faq } from '@/components/sections/faq';
 import { TargetAudience } from '@/components/sections/target-audience';
 import { Sessions } from '@/components/sections/sessions';
-import { SubmissionGuidelines } from '@/components/sections/submission-guidelines';
 
 export default function Home() {
   return (
@@ -25,7 +24,6 @@ export default function Home() {
         <About />
         <ImportantDates />
         <CallForPapers />
-        <SubmissionGuidelines />
         <Speakers />
         <Committee />
         <Program />

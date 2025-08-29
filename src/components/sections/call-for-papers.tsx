@@ -79,7 +79,7 @@ export function CallForPapers() {
         </div>
          <div className="text-center mt-12">
             <Button asChild size="lg" variant="outline" className="border-primary text-primary hover:bg-primary/10 hover:text-primary transition-transform duration-300 hover:scale-110">
-                <Link href="#submission-guidelines">View Submission Guidelines</Link>
+                <Link href="/submission-info">View Submission Guidelines</Link>
             </Button>
         </div>
       </div>
